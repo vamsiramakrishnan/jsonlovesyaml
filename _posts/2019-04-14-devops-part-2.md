@@ -6,7 +6,7 @@ categories:
 - Devops
 - OCI
 - Cloudnative
-image: "/uploads/containers.jpeg"
+image: "/assets/images/containers.jpeg"
 tags:
 - featured
 

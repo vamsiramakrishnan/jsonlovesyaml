@@ -6,8 +6,8 @@ tags:
 layout: post
 title: Do yourself a favour , install WSL
 author: vamsi
-image: ''
-date: 2019-04-14 18:15:45 +0530
+image: "/assets/images/wsl.jpeg"
+date: 2019-04-14 12:45:45 +0000
 
 ---
 **Y**ou have Windows 10. You setup VMs within Windows to execute Linux native commands. You ❤ Docker, Kubernetes and Minikube and you don’t have Hyper-V and don’t like the cumbersome setup process and is highly unreliable. You ❤ Power shell + Chocolatey but you simply can’t get over Bash !!. Your Linux VMs are really slow and consume a lot of resources
