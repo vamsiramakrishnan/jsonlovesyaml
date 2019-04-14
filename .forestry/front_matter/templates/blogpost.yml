@@ -24,4 +24,4 @@ fields:
   label: tags
   default: []
 pages:
-- _posts/my-sample-title.md
+- _posts/2019-04-14-my-sample-title.md
