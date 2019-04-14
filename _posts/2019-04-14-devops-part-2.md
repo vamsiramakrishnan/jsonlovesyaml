@@ -7,6 +7,8 @@ categories:
 - OCI
 - Cloudnative
 image: "/uploads/containers.jpeg"
+tags:
+- featured
 
 ---
 This post we primarily focus on setting up of pre-requisites for the end to end DevOps environment using Oracle Cloud. [Link to Part 1](https://medium.com/jsonlovesyaml/devops-on-steroids-with-oracle-kubernetes-engine-oke-oracle-developer-cloud-service-wercker-4eb7d45be6be)(TL;DR)
