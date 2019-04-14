@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Markdown Example
+title: Custom Steps with Wercker
 author: vamsi
 categories:
 - cicd
