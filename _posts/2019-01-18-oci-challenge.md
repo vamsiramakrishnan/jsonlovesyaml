@@ -4,9 +4,13 @@ title: Try the OCI Challenge
 author: vamsi
 categories:
 - oci
-image: "/uploads/ocichallenge.jpeg"
+image: "/assets/images/ocichallenge.jpeg"
 tags:
 - sticky
 
 ---
-### [**_https://vamsiramakrishnan.github.io/ocichallenge/_**](https://vamsiramakrishnan.github.io/ocichallenge/ "Here !!")
+This entire challenge is a process of evaluating people that have the same passion that Oracle Cloud has
+
+> ### Building great Cloud Native Innovation. Scaling it reliably for the Enterprise.
+
+#### [**_ocichallenge_**](https://vamsiramakrishnan.github.io/ocichallenge "ocichallenge")
