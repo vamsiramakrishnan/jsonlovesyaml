@@ -24,37 +24,37 @@ Roughly translated to
 
 1. **Presentable** : Storage should be presentable to Containers
 
-   > Can my containers understand see and write data to the storage solution
-   >
-   > Can the volumes move across VMs/ Servers and attach themselves to containers the same way Containers move across VMs / Servers
+       Can my containers understand see and write data to the storage solution
+       Can the volumes move across VMs freely as containers get rescheduled?
 2. **Declarative**: Should be composable/declarative just like Containers
 
-   > Can I define a YAML file / JSON File or any declarative file that allows me to provision storage for my containers
+       Can I define a YAML file / JSON File to provision storage
+       Declarative file that allows me to provision storage for my containers
 3. **Portable** : Should be just as portable as Containers are,
 
-   > Can I use the same storage solution for both Docker Swarm and Kubernetes
-   >
-   > On-prem Kubernetes and the managed Kubernetes on Cloud
+       Can I use the same storage solution for both Docker Swarm and Kubernetes
+       On-prem Kubernetes and the managed Kubernetes on Cloud
 4. **Distributed**: Should follow the same distributed architecture for
 
    fault tolerance and scalability
 
-   > Can I increase capacity ?
-   >
-   > Distribute data across nodes for performance ?
-   >
-   > Can I control the number of copies of data retained ?
+       Can I increase capacity elastically ?
+       Distribute data across nodes for performance ?
+       Can I control the number of copies of data retained ?
 
 ### Additional Needs for an Enterprise
 
 1. **Security** :
 
-   > Data encryption at rest and in-motion ?
-   >
-   > Principles of Role Based Access Control ?
-   >
-   > Can data encryption be transparent to the application ?
-2. **HA/Business Continuity/ QoS:**
+       Data encryption at rest and in-motion ?
+       Principles of Role Based Access Control ?
+       How do I use existing principles of access control to extend to this storage solution ?
+       Can data encryption be transparent to the application ?
+2. **Business Continuity/ QoS:**
 
-   > 
-3. 
+       Can I take snapshots of the data stored and restore it ?
+       How easy is it to replicate it across geographies 
+       Make sure I can have fine grained control over How Performant | How much redundancy
+3. **Hardware Agnostic:**
+
+       
