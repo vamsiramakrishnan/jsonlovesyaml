@@ -13,15 +13,13 @@ date: 2019-04-14 15:43:14 +0000
 ---
 ### If Containers are stateless why do they need storage?
 
-![](/assets/images/Ceph_Charles.jpg)
+![Father of Computing](/assets/images/Ceph_Charles.jpg "Charles Babbage")
 
 > _Je n’ai fait celle-ci plus longue que parce que je n’ai pas eu le loisir de la faire plus courte. - Charles Babbage_
 
 Roughly translated to
 
 > _I did this longer because I did not have the time to make it shorter._
-
-![](/assets/images/twist.jpeg)
 
 #### Twist it a little
 
