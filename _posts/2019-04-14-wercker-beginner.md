@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CI-CD simplified with Wercker + Kubernetes on Oracle Cloud Infrastructure
+title: Simplify Continuous Integration and Delivery with Wercker
 author: vamsi
 categories:
 - OCI
