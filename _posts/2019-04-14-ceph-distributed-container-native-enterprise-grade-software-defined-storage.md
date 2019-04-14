@@ -9,6 +9,7 @@ title: Ceph - On-Premise Container Native Storage
 author: vamsi
 image: "/assets/images/ceph.jpeg"
 date: 2019-04-14 15:43:14 +0000
+color: "#E63434"
 
 ---
 ### If Containers are stateless why do they need storage?
