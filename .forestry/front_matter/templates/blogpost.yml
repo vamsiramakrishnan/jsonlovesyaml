@@ -1,0 +1,26 @@
+---
+label: BlogPost
+hide_body: false
+display_field: title
+fields:
+- type: select
+  config:
+    source:
+      type: documents
+- type: text
+  label: Title
+  name: title
+  description: Title of your blog post
+  config:
+    required: true
+- type: textarea
+  name: blogcontent
+  label: BlogContent
+  description: Content of your Blog
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: image_gallery
+- type: tag_list

@@ -7,7 +7,7 @@ categories:
 - Devops
 - OCI
 - Cloudnative
-image: "/assets/images/containers"
+image: "/uploads/containers.jpeg"
 
 ---
 This post we primarily focus on setting up of pre-requisites for the end to end DevOps environment using Oracle Cloud. [Link to Part 1](https://medium.com/jsonlovesyaml/devops-on-steroids-with-oracle-kubernetes-engine-oke-oracle-developer-cloud-service-wercker-4eb7d45be6be)(TL;DR)
@@ -15,7 +15,7 @@ This post we primarily focus on setting up of pre-requisites for the end to end 
 **Definition of Terms**
 
 * [**Oracle Kubernetes Engine**](https://cloud.oracle.com/containers/kubernetes-engine) is a managed service for running Production Grade Highly Available Kubernetes Clusters
-* [**Oracle Developer Cloud Service **](https://cloud.oracle.com/en_US/developer-service)is a managed service to streamline software development and delivery
+* [**Oracle Developer Cloud Service**](https://cloud.oracle.com/en_US/developer-service) is a managed service to streamline software development and delivery
 * [**Wercker**](http://www.wercker.com/) aka [**Oracle Container Pipelines**](https://cloud.oracle.com/en_US/containers/pipelines) is a managed container native continuous integration and delivery platform
 * [**Helm**](https://helm.sh/) and Tiller are Client-Side and Server-Side Package Management tools for Kubernetes through abstractions called Charts
 * [**Monocular**](https://github.com/helm/monocular) is a Web-UI for Helm and Tiller.
@@ -42,7 +42,7 @@ This post we primarily focus on setting up of pre-requisites for the end to end 
 1. Install Choco — Package Manager [Tutorial](https://medium.com/@JockDaRock/installing-the-chocolatey-package-manager-for-windows-3b1bdd0dbb49)
 2. Open Powershell as Administrator and run the following commands
 
-    choco install kubernetes-clichoco install kubernetes-helm
+   choco install kubernetes-clichoco install kubernetes-helm
 
 3\. Setup the “**_kubeconfig_**” env variable to point to the directory where the file is downloaded.
 
@@ -79,7 +79,7 @@ Read More about [Monocular](https://github.com/helm/monocular)
 ![](https://cdn-images-1.medium.com/max/750/0*yujOOiV6Cu_Oe_1k.gif)
 
     1)Install an NGINX Ingresshelm install stable/nginx-ingress
-
+    
     2)Install Monocularhelm repo add monocular https://helm.github.io/monocularhelm install monocular/monocular
 
 #### Setup Spinnaker
