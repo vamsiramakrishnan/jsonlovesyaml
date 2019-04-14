@@ -23,3 +23,5 @@ fields:
   name: tags
   label: tags
   default: []
+pages:
+- _posts/you-don-t-need-a-vm-to-run-linux-on-windows-anymore.md
