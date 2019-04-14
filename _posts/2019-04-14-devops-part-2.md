@@ -1,7 +1,6 @@
 ---
 layout: post
-title: DevOps on Steroids with Oracle Kubernetes Engine, Oracle Developer Cloud Service,
-  Wercker/Spinnaker, Helm and Monocular — Setup Pre-reqs (2/3)
+title: DevOps on Steroids part - 2
 author: vamsi
 categories:
 - Devops
