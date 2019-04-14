@@ -1,20 +1,15 @@
 ---
 layout: post
-title: About Bundler
-author: sal
+title: DevOps on Steroids with Oracle Kubernetes Engine, Oracle Developer Cloud Service,
+  Wercker/Spinnaker, Helm and Monocular — Setup Pre-reqs (2/3)
+author: vamsi
 categories:
-- Jekyll
+- Devops
+- OCI
+- Cloudnative
 image: ''
 
 ---
-# DevOps on Steroids with Oracle Kubernetes Engine, Oracle Developer Cloud Service, Wercker/Spinnaker, Helm and Monocular — Setup Pre-reqs (2/3)
-
-[![Go to the profile of Vamsi Ramakrishnan](https://cdn-images-1.medium.com/fit/c/47/47/1*pAthtp13l0RC730kyGSjqA.jpeg)](https://medium.com/@vamsiramakrishnan?source=post_header_lockup)
-
-[Vamsi Ramakrishnan](https://medium.com/@vamsiramakrishnan)
-
-Sep 18, 2018
-
 This post we primarily focus on setting up of pre-requisites for the end to end DevOps environment using Oracle Cloud. [Link to Part 1](https://medium.com/jsonlovesyaml/devops-on-steroids-with-oracle-kubernetes-engine-oke-oracle-developer-cloud-service-wercker-4eb7d45be6be)(TL;DR)
 
 **Definition of Terms**
