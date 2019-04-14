@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DevOps on Steroids with Oracle Stack part - 2
+title: DevOps on Steroids with Oracle Stack Part 2
 author: vamsi
 categories:
 - Devops
