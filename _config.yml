@@ -17,13 +17,14 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-menus
   
 authors:
     vamsi:
       name:           Vamsi
       site:           https://in.linkedin.com/in/vamsiramakrishnan
       avatar:         /assets/images/avatar1.jpg
-      bio:            "Delighting Enterprise Customers with Oracle Cloud Solutions"
+      bio:            "Delighting Enterprise Customers with elegantly architected solutions on Oracle Cloud"
       email:          vamsi.ramakrishnan@oracle.com
       twitter:        https://twitter.com/mrvemzi
  
