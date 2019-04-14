@@ -24,30 +24,31 @@ Roughly translated to
 
 #### Twist it a little
 
-### Are only stateless (_parts of_) applications suitable for containerization ?
+> ##### _Are only stateless (parts of) applications suitable for containerization ?_
 
 ### Design Considerations for Container Native Storage Solution
 
-1. **Presentable** : Storage should be presentable to Containers
-   * Can my containers understand see and write data to the storage solution
-   * Can the volumes move across VMs freely as containers get rescheduled?
+**Presentable** : Storage should be presentable to Containers
 
-   **Declarative**: Should be composable/declarative just like Containers
+* Can my containers understand see and write data to the storage solution
+* Can the volumes move across VMs freely as containers get rescheduled?
 
-       Can I define a YAML file / JSON File to provision storage
-       Declarative file that allows me to provision storage for my containers
+**Declarative**: Should be composable/declarative just like Containers
 
-   **Portable** : Should be just as portable as Containers are,
+* Can I define a YAML file / JSON File to provision storage
+* Declarative file that allows me to provision storage for my containers
 
-       Can I use the same storage solution for both Docker Swarm and Kubernetes
-       On-prem Kubernetes and the managed Kubernetes on Cloud
+**Portable** : Should be just as portable as Containers are,
 
-   **Distributed**: Should follow the same distributed architecture for fault tolerance and scalability
+* Can I use the same storage solution for both Docker Swarm and Kubernetes
+  On-prem Kubernetes and the managed Kubernetes on Cloud
 
-       Can I increase capacity elastically ?
-       Distribute data across nodes for performance ?
-       Will performace scale with size of cluster ?
-       Can I control the number of copies of data retained ?
+**Distributed**: Should follow the same distributed architecture for fault tolerance and scalability
+
+* Can I increase capacity elastically ?
+* Distribute data across nodes for performance ?
+* Will performace scale with size of cluster ?
+* Can I control the number of copies of data retained ?
 
 ### Additional Needs for an Enterprise
 
@@ -67,6 +68,5 @@ Roughly translated to
 
 ### Dumb Hardware | Smart Software
 
-> The intelligence of my container native storage solution should arise from Software not hardware
->
-> This makes my storage solution extensible and can co-exist with a heterogeneous storage and compute landscape
+* The intelligence of my container native storage solution should arise from Software not hardware
+* This makes my storage solution extensible and can co-exist with a heterogeneous storage and compute landscape
