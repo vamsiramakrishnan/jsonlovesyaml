@@ -8,7 +8,7 @@ layout: post
 title: DevOps on Steroids with Oracle Stack
 author: vamsi
 image: "/uploads/devopsintro.jpeg"
-date: 2019-04-14 13:31:52 +0530
+date: 2019-04-14 08:01:52 +0000
 
 ---
 An article on hyper-optimization of Continuous Integration and Delivery. This article outlines
@@ -69,7 +69,11 @@ The motivation to have immutable and idempotent infrastructure arises from these
 
 #### Snowflake Servers
 
-    Configuring a Snowflake Server Requires: --> Multi-language command line invocations(Bash, Python, Manual file copies) --> Frequent jumping between GUI screens  --> Order of execution is SysAdmin artistry --> Ad-hoc changes--> Documented in Email, Excel and Word 
+    Configuring a Snowflake Server Requires: 
+    --> Multi-language command line invocations(Bash, Python, Manual file copies) --> Frequent jumping between GUI screens  
+    --> Order of execution is SysAdmin artistry 
+    --> Ad-hoc changes
+    --> Documented in Email, Excel and Word 
 
 ![](https://cdn-images-1.medium.com/max/1500/1*FP3HEfgaFy5BzSsJN5JPpw.png)
 
@@ -79,11 +83,19 @@ Credit: Martin Fowler — Snowflake Server
 
 #### Pet Servers
 
-    What are our priorities for Pet Servers:--> Longevity--> Interdependencies--> Centralization --> Scale up
+    What are our priorities for Pet Servers:
+    --> Longevity
+    --> Interdependencies
+    --> Centralization 
+    --> Scale up
 
-> “We need cattle not pets”
+> ## “We need cattle not pets”
 
-    Priorities for Cattle Servers:--> Disposability--> Isolation--> Decomposition--> Scale Out 
+    Priorities for Cattle Servers:
+    --> Disposability
+    --> Isolation
+    --> Decomposition
+    --> Scale Out 
 
 ![](https://cdn-images-1.medium.com/max/1500/0*AvOYZkQ-zCsJwC4-.png)
 
@@ -94,7 +106,7 @@ Credit: Martin Fowler — Snowflake Server
 #### What is Idempotency
 
     State drives changes in the system and the system's state is maintained.
-
+    
     Step 1: Declaration of Desired State Step 2: Path to attain Desired StateStep 3: Convergence to Desired State Step 4: Maintenance of Desired State
 
 #### What is Immutability
@@ -132,11 +144,11 @@ Highlander Deployments
 Blue Green | Rolling Blue-Green | Canary deployments
 
     2) Blue/Green:* Method: Create new deployment in parallel, switch over on Load Balancer* Pros: Atomic deployment, One at a time, faster roll back* Cons: Full-throttle traffic could overwhelm application instances where there is no cache build-up.
-
+    
     3) Rolling Blue/Green: * Method: Similar to Blue/Green, variation in traffic switch over rates* Pros: The new application is load tested on real workloads before complete switch-over* Cons: The application must support two different versions running at once.
-
+    
     4) Canary Deployments:* Method: Layered rolling blue-green deployment with defined pass/fail metrics* Pros:   Limits the blast radius to a small percentage of your user-base
-
+    
     5) Shadow Deployments:* Method:  Strategy forwards traffic to both versions without impacting users* Pros: New version undergoes battle tested production workload test* Cons: Complicated to set up and requires extra infrastructure
 
 ### Version everything
@@ -150,7 +162,7 @@ DevOps heavily depends on the ability to execute fast fail-overs to a known, sta
 #### What do I need !!
 
     Highly Performant , Fault-Tolerant, Scaleable Cloud Infra Oracle Cloud Infrastructure 
-
+    
     1) CI/CD - Oracle Container Pipelines + Spinnaker2) Container Technology - Docker 3) Container Orchestration - Oracle Kubernetes Engine4) Container Native Package Management - Helm5) Artifact Repository + Services - Oracle Developer Cloud Service6) Infrastructure as Code - Terraform + Chef/Puppet/SaltStack
 
 ### Let’s talk IT
