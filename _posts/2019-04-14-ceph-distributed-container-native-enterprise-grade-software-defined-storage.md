@@ -28,13 +28,7 @@ Roughly translated to
 
 #### Twist it a little further
 
-<div>
-
-<p style="text-align: center; color: red;">saasdasddd</p>
-
-</div>
-
-> ##### _Are  containers suited to run only stateless applications ?_
+> ##### _Are containers suited to run only stateless applications ?_
 
 ### Design Considerations for Container Native Storage Solution
 
