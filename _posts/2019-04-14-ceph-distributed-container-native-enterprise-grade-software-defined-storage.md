@@ -16,11 +16,13 @@ color: "#E63434"
 
 > _Je n’ai fait celle-ci plus longue que parce que je n’ai pas eu le loisir de la faire plus courte. - Charles Babbage
 
-[!CephCharles](/assets/images/CephCharles.jpg)
+![](/assets/images/CephCharles.jpg)
 
 Roughly translated to
 
 > _I did this longer because I did not have the time to make it shorter._
+
+![](/assets/images/twist.jpeg)
 
 #### Twist it a little
 
