@@ -13,8 +13,8 @@ tags: featured
 ---
 If you cannot find a pre-defined step in the Wercker Step store that satisfies your requirement, and if you want these steps defined as custom-code to be consistent and be executed in the same order every single time, you can write your own step.
 
-    -----------  History-----------* 
-    Oracle completed the acquisition of Wercker in 2017 and added it to their rich CI/CD offerings. 
+    -----------  History-----------
+    * Oracle completed the acquisition of Wercker in 2017 and added it to their rich CI/CD offerings. 
     * In this article you may find Oracle Container Pipelines being used interchangeably with Wercker!!
 
 If you are new to Wercker, here is some suggested reading
@@ -33,18 +33,24 @@ _Wercker Custom Step to execute helm on Wercker. Contribute to vamsiramakrishnan
 
 1. Writing a step on Wercker is no different from using them as a part of your pipeline.
 
-    --------Concepts-------- 
-    A custom Wercker step is a sequence of Wercker steps A custom Wercker step is a container published into the Step Store
+   \--------Concepts--------
+   A custom Wercker step is a sequence of Wercker steps A custom Wercker step is a container published into the Step Store
 
 2\. You will need the following
 
-    1. A Step Manifest File 2. A Wercker.yml File3. A run.sh File
+    1. A Step Manifest File 
+    2. A Wercker.yml File
+    3. A run.sh File
 
 #### Step manifest
 
 The step manifest contains the following information
 
-    ----------------------------Anatomy of the Step manifest----------------------------1. Name of your step 2. Version of your step 3. Summary4. Configurable Parameters
+    ----------------------------Anatomy of the Step manifest----------------------------
+    1. Name of your step 
+    2. Version of your step 
+    3. Summary
+    4. Configurable Parameters
 
 #### How does the step manifest file look ?
 

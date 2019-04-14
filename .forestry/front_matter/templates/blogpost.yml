@@ -23,5 +23,3 @@ fields:
   name: tags
   label: tags
   default: []
-pages:
-- _posts/2019-04-14-my-sample-title.md

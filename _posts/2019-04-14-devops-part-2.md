@@ -1,12 +1,14 @@
 ---
 layout: post
-title: DevOps on Steroids part - 2
+title: DevOps on Steroids with Oracle Stack part - 2
 author: vamsi
 categories:
 - Devops
 - OCI
 - Cloudnative
 image: "/uploads/containers.jpeg"
+tags:
+- featured
 
 ---
 This post we primarily focus on setting up of pre-requisites for the end to end DevOps environment using Oracle Cloud. [Link to Part 1](https://medium.com/jsonlovesyaml/devops-on-steroids-with-oracle-kubernetes-engine-oke-oracle-developer-cloud-service-wercker-4eb7d45be6be)(TL;DR)
@@ -24,11 +26,13 @@ This post we primarily focus on setting up of pre-requisites for the end to end 
 
 #### Setup Oracle Kubernetes Engine
 
-    --> Through Console ( Involves Button Clicks ) Tutorial --> Through a Terraform Script Link
+    --> Through Console ( Involves Button Clicks )
+    Tutorial --> Through a Terraform Script Link
 
 #### Setup Oracle Developer Cloud Service (Dev-CS) / Github
 
-    --> Here's an interactive tutorial to setup Dev-CS Link--> Just to setup Github-HelloWorld
+    --> Here's an interactive tutorial to setup Dev-CS Link
+    --> Just to setup Github-HelloWorld
 
 #### Setup Oracle Container Pipelines / Wercker Account It’s Free!!
 
@@ -45,13 +49,15 @@ This post we primarily focus on setting up of pre-requisites for the end to end 
 
 3\. Setup the “**_kubeconfig_**” env variable to point to the directory where the file is downloaded.
 
-    1) Right Click My Computer → Properties → Advanced System Settings → Environment Variables → System variables → “KUBECONFIG” 2) Right Click My Computer → Properties → Advanced System Settings → Environment Variables → User variables → “KUBECONFIG”
+    1) Right Click My Computer → Properties → Advanced System Settings → Environment Variables → System variables → “KUBECONFIG” 
+    2) Right Click My Computer → Properties → Advanced System Settings → Environment Variables → User variables → “KUBECONFIG”
 
 If you don't have the kubeconfig file of Oracle Kubernetes Engine and don’t know how to download it please use this [**link**](https://docs.cloud.oracle.com/iaas/Content/ContEng/Tasks/contengdownloadkubeconfigfile.htm)
 
 The [Oracle Kubernetes Engine](https://cloud.oracle.com/containers/kubernetes-engine) comes installed with Tiller, hence there is no need to install it separately, however, to ensure that the tiller pod is up to date
 
-    helm inithelm init --upgrade --service-account tiller
+    helm init 
+    helm init --upgrade --service-account tiller
 
 **Linux**
 
@@ -61,7 +67,8 @@ Install and configure kubectl and helm on linux
 
 **Post Installation**
 
-    helm inithelm init --upgrade --service-account tiller
+    helm init
+    helm init --upgrade --service-account tiller
 
 #### Make Kubernetes Cloud Infrastructure Aware
 
@@ -77,9 +84,11 @@ Read More about [Monocular](https://github.com/helm/monocular)
 
 ![](https://cdn-images-1.medium.com/max/750/0*yujOOiV6Cu_Oe_1k.gif)
 
-    1)Install an NGINX Ingresshelm install stable/nginx-ingress
+    1)Install an NGINX Ingress
+    helm install stable/nginx-ingress
     
-    2)Install Monocularhelm repo add monocular https://helm.github.io/monocularhelm install monocular/monocular
+    2)Install Monocular
+    helm repo add monocular https://helm.github.io/monocularhelm install monocular/monocular
 
 #### Setup Spinnaker
 
