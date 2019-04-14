@@ -4,7 +4,7 @@ categories:
 tags:
 - featured
 layout: post
-title: You don’t need a VM to run Linux on Windows anymore !!
+title: Do yourself a favour , install WSL
 author: vamsi
 image: ''
 date: 2019-04-14 18:15:45 +0530
