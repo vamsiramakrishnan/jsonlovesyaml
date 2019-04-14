@@ -5,8 +5,7 @@ categories:
 tags:
 - sticky
 layout: post
-title: Ceph - Distributed | Container Native | Enterprise Grade | Software Defined
-  Storage
+title: Ceph - On-Premise Container Native Storage
 author: vamsi
 image: "/assets/images/ceph.jpeg"
 date: 2019-04-14 15:43:14 +0000
@@ -25,6 +24,10 @@ Roughly translated to
 #### Twist it a little
 
 > ##### _Are only stateless (parts of) applications suitable for containerization ?_
+
+#### Twist it a little further
+
+> ##### _Are  containers suited to run only stateless applications ?_
 
 ### Design Considerations for Container Native Storage Solution
 
@@ -47,7 +50,7 @@ Roughly translated to
 
 * Can I increase capacity elastically ?
 * Distribute data across nodes for performance ?
-* Will performace scale with size of cluster ?
+* Will performance scale with size of cluster ?
 * Can I control the number of copies of data retained ?
 
 ### Additional Needs for an Enterprise
