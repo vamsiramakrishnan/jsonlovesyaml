@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accumulated experience of social living
+title: CI-CD simplified with Wercker + Kubernetes on Oracle Cloud Infrastructure
 author: vamsi
 categories:
 - oraclecloudinfrastructure
