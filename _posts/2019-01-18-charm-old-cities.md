@@ -9,4 +9,4 @@ tags:
 - sticky
 
 ---
-### [**https://vamsiramakrishnan.github.io/ocichallenge/**](https://vamsiramakrishnan.github.io/ocichallenge/ "https://vamsiramakrishnan.github.io/ocichallenge/")
+    https://vamsiramakrishnan.github.io/ocichallenge/
