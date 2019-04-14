@@ -7,7 +7,7 @@ tags:
 layout: post
 title: DevOps on Steroids with Oracle Stack
 author: vamsi
-image: "/uploads/devopsintro.jpeg"
+image: "/assets/images/devopsintro.jpeg"
 date: 2019-04-14 08:01:52 +0000
 
 ---
