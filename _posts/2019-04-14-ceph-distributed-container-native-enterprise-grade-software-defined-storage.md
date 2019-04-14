@@ -21,6 +21,8 @@ Roughly translated to
 
 > _I did this longer because I did not have the time to make it shorter._
 
+![](/assets/images/twist.jpeg)
+
 #### Twist it a little
 
 > ##### _Are only stateless (parts of) applications suitable for containerization ?_
@@ -65,8 +67,8 @@ Roughly translated to
 **Business Continuity/ QoS:**
 
 * Can I take snapshots of the data stored and restore it ?
-* How easy is it to replicate it across geographies  
-* Make sure I can have fine grained control over number of copies | which part of my hardware 
+* How easy is it to replicate it across geographies
+* Make sure I can have fine grained control over number of copies | which part of my hardware
 * Thin provisioning
 
 ### Dumb Hardware | Smart Software
