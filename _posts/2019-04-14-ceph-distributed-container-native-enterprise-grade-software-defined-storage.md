@@ -9,18 +9,20 @@ title: Ceph - Distributed | Container Native | Enterprise Grade | Software Defin
   Storage
 author: vamsi
 image: "/assets/images/ceph.jpeg"
-date: 2019-04-14 21:13:14 +0530
+date: 2019-04-14 15:43:14 +0000
 
 ---
 ### If Containers are stateless why do they need storage?
 
+![](/assets/images/Ceph_Charles.jpg)
+
 > _Je n’ai fait celle-ci plus longue que parce que je n’ai pas eu le loisir de la faire plus courte. - Charles Babbage_
 
-Roughly translated to 
+Roughly translated to
 
 > _I did this longer because I did not have the time to make it shorter._
 
-#### Twist it a little 
+#### Twist it a little
 
 ### Are only stateless (_parts of_) applications suitable for containerization ?
 
@@ -63,6 +65,6 @@ Roughly translated to
 
    ### Dumb Hardware | Smart Software
 
-   > The intelligence of my container native storage solution should arise from Software not hardware  
+   > The intelligence of my container native storage solution should arise from Software not hardware
    >
    > This makes my storage solution extensible and can co-exist with a heterogeneous storage and compute landscape

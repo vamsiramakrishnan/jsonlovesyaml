@@ -23,5 +23,3 @@ fields:
   name: tags
   label: tags
   default: []
-pages:
-- _posts/ceph-distributed-container-native-enterprise-grade-software-defined-storage.md
