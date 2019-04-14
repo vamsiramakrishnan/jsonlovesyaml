@@ -29,18 +29,20 @@ Roughly translated to
 ### Design Considerations for Container Native Storage Solution
 
 1. **Presentable** : Storage should be presentable to Containers
+   * Can my containers understand see and write data to the storage solution
+   * Can the volumes move across VMs freely as containers get rescheduled?
 
-       Can my containers understand see and write data to the storage solution
-       Can the volumes move across VMs freely as containers get rescheduled?
-2. **Declarative**: Should be composable/declarative just like Containers
+   **Declarative**: Should be composable/declarative just like Containers
 
        Can I define a YAML file / JSON File to provision storage
        Declarative file that allows me to provision storage for my containers
-3. **Portable** : Should be just as portable as Containers are,
+
+   **Portable** : Should be just as portable as Containers are,
 
        Can I use the same storage solution for both Docker Swarm and Kubernetes
        On-prem Kubernetes and the managed Kubernetes on Cloud
-4. **Distributed**: Should follow the same distributed architecture for fault tolerance and scalability
+
+   **Distributed**: Should follow the same distributed architecture for fault tolerance and scalability
 
        Can I increase capacity elastically ?
        Distribute data across nodes for performance ?
@@ -49,20 +51,22 @@ Roughly translated to
 
 ### Additional Needs for an Enterprise
 
-1. **Security** :
+**Security** :
 
-       Data encryption at rest and in-motion ?
-       Principles of Role Based Access Control ?
-       How do I use existing principles of access control to extend to this storage solution ?
-       Can data encryption be transparent to the application ?
-2. **Business Continuity/ QoS:**
+* Data encryption at rest and in-motion ?
+* Principles of Role Based Access Control ?
+* How do I use existing principles of access control to extend to this storage solution ?
+* Can data encryption be transparent to the application ?
 
-       Can I take snapshots of the data stored and restore it ?
-       How easy is it to replicate it across geographies 
-       Make sure I can have fine grained control over How Performant | How much redundancy
+**Business Continuity/ QoS:**
 
-   ### Dumb Hardware | Smart Software
+* Can I take snapshots of the data stored and restore it ?
+* How easy is it to replicate it across geographies  
+* Make sure I can have fine grained control over number of copies | which part of my hardware 
+* Thin provisioning
 
-   > The intelligence of my container native storage solution should arise from Software not hardware
-   >
-   > This makes my storage solution extensible and can co-exist with a heterogeneous storage and compute landscape
+### Dumb Hardware | Smart Software
+
+> The intelligence of my container native storage solution should arise from Software not hardware
+>
+> This makes my storage solution extensible and can co-exist with a heterogeneous storage and compute landscape
