@@ -40,9 +40,7 @@ Roughly translated to
 
        Can I use the same storage solution for both Docker Swarm and Kubernetes
        On-prem Kubernetes and the managed Kubernetes on Cloud
-4. **Distributed**: Should follow the same distributed architecture for
-
-   fault tolerance and scalability
+4. **Distributed**: Should follow the same distributed architecture for fault tolerance and scalability
 
        Can I increase capacity elastically ?
        Distribute data across nodes for performance ?
