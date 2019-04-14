@@ -7,7 +7,7 @@ categories:
 - devops
 - oci
 - wercker
-image: "/uploads/cicdcustomstep.jpeg"
+image: "/assets/images/cicdcustomstep.jpeg"
 tags: featured
 
 ---
