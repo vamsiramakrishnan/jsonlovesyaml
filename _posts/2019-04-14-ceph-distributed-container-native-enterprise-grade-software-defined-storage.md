@@ -12,7 +12,7 @@ image: "/assets/images/ceph.jpeg"
 date: 2019-04-14 21:13:14 +0530
 
 ---
-If Containers are stateless why do they need storage ? 
+    If Containers are stateless why do they need storage ? 
 
 > _Je n’ai fait celle-ci plus longue que parce que je n’ai pas eu le loisir de la faire plus courte. - Charles Babbage_
 
@@ -40,6 +40,7 @@ Roughly translated to
 
        Can I increase capacity elastically ?
        Distribute data across nodes for performance ?
+       Will performace scale with size of cluster ?
        Can I control the number of copies of data retained ?
 
 ### Additional Needs for an Enterprise
@@ -55,6 +56,9 @@ Roughly translated to
        Can I take snapshots of the data stored and restore it ?
        How easy is it to replicate it across geographies 
        Make sure I can have fine grained control over How Performant | How much redundancy
-3. **Hardware Agnostic:**
 
-       
+   ### Dumb Hardware | Smart Software
+
+   > The intelligence of my container native storage solution should arise from Software not hardware  
+   >
+   > This makes my storage solution extensible and can co-exist with a heterogeneous storage and compute landscape
