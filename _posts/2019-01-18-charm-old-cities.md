@@ -9,6 +9,4 @@ tags:
 - sticky
 
 ---
-### Jump here
-
-> [https://vamsiramakrishnan.github.io/ocichallenge/](https://vamsiramakrishnan.github.io/ocichallenge/ "https://vamsiramakrishnan.github.io/ocichallenge/")
+### [https://vamsiramakrishnan.github.io/ocichallenge/](https://vamsiramakrishnan.github.io/ocichallenge/ "https://vamsiramakrishnan.github.io/ocichallenge/")
