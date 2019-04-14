@@ -1,10 +1,12 @@
 ---
 layout: post
-title: Tree of Codes
+title: The Museum of Charts on Oracle Object Storage
 author: vamsi
 categories:
+- oke
+- oci
 - ''
-image: ''
+image: "/assets/images/museum.jpeg"
 
 ---
 
