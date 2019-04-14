@@ -3,10 +3,8 @@ layout: post
 title: CI-CD simplified with Wercker + Kubernetes on Oracle Cloud Infrastructure
 author: vamsi
 categories:
-- oraclecloudinfrastructure
-- oci
-- kubernetes
-- cloudnative
+- OCI
+- Wercker
 image: assets/images/15.jpg
 
 ---
