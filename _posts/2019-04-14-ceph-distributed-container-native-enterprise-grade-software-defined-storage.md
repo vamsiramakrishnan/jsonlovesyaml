@@ -12,13 +12,17 @@ image: "/assets/images/ceph.jpeg"
 date: 2019-04-14 21:13:14 +0530
 
 ---
-    If Containers are stateless why do they need storage ? 
+### If Containers are stateless why do they need storage?
 
 > _Je n’ai fait celle-ci plus longue que parce que je n’ai pas eu le loisir de la faire plus courte. - Charles Babbage_
 
 Roughly translated to 
 
 > _I did this longer because I did not have the time to make it shorter._
+
+#### Twist it a little 
+
+### Are only stateless (_parts of_) applications suitable for containerization ?
 
 ### Design Considerations for Container Native Storage Solution
 
