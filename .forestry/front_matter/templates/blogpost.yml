@@ -23,3 +23,5 @@ fields:
   name: tags
   label: tags
   default: []
+pages:
+- _posts/kubernetes-playground-on-your-laptop.md
