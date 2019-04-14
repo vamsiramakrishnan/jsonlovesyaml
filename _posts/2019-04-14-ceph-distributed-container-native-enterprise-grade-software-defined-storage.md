@@ -14,9 +14,9 @@ color: "#E63434"
 ---
 ### If Containers are stateless why do they need storage?
 
-![Father of Computing](/assets/images/Ceph_Charles.jpg "Charles Babbage")
+> _Je n’ai fait celle-ci plus longue que parce que je n’ai pas eu le loisir de la faire plus courte. - Charles Babbage
 
-> _Je n’ai fait celle-ci plus longue que parce que je n’ai pas eu le loisir de la faire plus courte. - Charles Babbage_
+[!CephCharles](/assets/images/CephCharles.jpg)
 
 Roughly translated to
 
