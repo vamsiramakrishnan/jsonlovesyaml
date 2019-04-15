@@ -1,16 +1,16 @@
 ---
+title: DevOps on Steroids with Oracle Stack
+date: 2019-04-14 08:01:52 Z
 categories:
 - devops
 - oci
 tags:
 - featured
 layout: post
-title: DevOps on Steroids with Oracle Stack
 author: vamsi
 image: "/assets/images/devopsintro.jpeg"
-date: 2019-04-14 08:01:52 +0000
-
 ---
+
 An article on hyper-optimization of Continuous Integration and Delivery. This article outlines
 
 * The motivation for DevOps

@@ -1,13 +1,13 @@
 ---
-layout: post
 title: The Museum of Charts on Oracle Object Storage
-author: vamsi
+date: 2019-03-31 00:00:00 Z
 categories:
 - oke
 - oci
 - ''
+layout: post
+author: vamsi
 image: "/assets/images/museum.jpeg"
-
 ---
 
 Because Kubectl is the new SSH

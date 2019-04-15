@@ -1,16 +1,17 @@
 ---
-layout: post
 title: DevOps on Steroids with Oracle Stack Part 2
-author: vamsi
+date: 2019-04-14 00:00:00 Z
 categories:
 - Devops
 - OCI
 - Cloudnative
-image: "/assets/images/containers.jpeg"
 tags:
 - featured
-
+layout: post
+author: vamsi
+image: "/assets/images/containers.jpeg"
 ---
+
 This post we primarily focus on setting up of pre-requisites for the end to end DevOps environment using Oracle Cloud. [Link to Part 1](https://medium.com/jsonlovesyaml/devops-on-steroids-with-oracle-kubernetes-engine-oke-oracle-developer-cloud-service-wercker-4eb7d45be6be)(TL;DR)
 
 **Definition of Terms**

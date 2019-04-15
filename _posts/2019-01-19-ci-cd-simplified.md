@@ -1,16 +1,18 @@
 ---
-layout: post
 title: Custom Steps with Wercker
-author: vamsi
+date: 2019-01-19 00:00:00 Z
 categories:
 - cicd
 - devops
 - oci
 - wercker
+tags:
+- featured
+layout: post
+author: vamsi
 image: "/assets/images/cicdcustomstep.jpeg"
-tags: featured
-
 ---
+
 If you cannot find a pre-defined step in the Wercker Step store that satisfies your requirement, and if you want these steps defined as custom-code to be consistent and be executed in the same order every single time, you can write your own step.
 
     -----------  History-----------

@@ -1,17 +1,18 @@
 ---
-layout: post
 title: The search for On Premises Container Native Storage
-author: vamsi
+date: 2019-04-15 00:00:00 Z
 categories:
 - cloudnative
 - kubernetes
 tags:
 - featured
 - sticky
+layout: post
+author: vamsi
 image: "/assets/images/ceph.jpeg"
 color: "#C12D2D"
-
 ---
+
 Gone are the days where Kubernetes was an exclusive cloud construct. For Enterprises, a viable container strategy that allows them to move applications of all nature on-premises from PoC to production is absolutely indispensable. 
 
 Container Native Storage is a key component to ensure enterprises' success in this journey of modernization. 

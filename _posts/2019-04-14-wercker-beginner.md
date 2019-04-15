@@ -1,13 +1,14 @@
 ---
-layout: post
 title: Simplify Continuous Integration and Delivery with Wercker
-author: vamsi
+date: 2019-04-14 00:00:00 Z
 categories:
 - OCI
 - Wercker
+layout: post
+author: vamsi
 image: assets/images/15.jpg
-
 ---
+
 The use case chosen here is pretty simple. Build a Go Web app every time there is a change and deploy it without any downtime. The same concept can be extended to most apps built with technologies such as Java , Python , Node.js etc.
 
 ### **Commit -> Build -> Deploy -> Repeat :**

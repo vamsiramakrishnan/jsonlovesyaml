@@ -1,15 +1,15 @@
 ---
+title: Kubernetes Playground on your laptop
+date: 2019-04-14 13:21:00 Z
 categories:
 - kubernetes
 tags:
 - featured
 layout: post
-title: Kubernetes Playground on your laptop
 author: vamsi
 image: "/assets/images/playground.jpeg"
-date: 2019-04-14 18:51:00 +0530
-
 ---
+
 Getting started with Kubernetes on a vanilla linux installation can be overwhelming considering the number of steps and the repetitions involved in setting up master and worker nodes. In this post I intend to explain how to set up Minikube with Hyper-V on your windows 10 laptop so you can play around with it easily.
 
 #### Minikube
