@@ -36,7 +36,13 @@ Roughly translated to
 
 ### Procrastination can't be forever.
 
-In the beginning everything was rosy when containers were merely scratching the surface and then everyone realized that 
+In the beginning everything was rosy when containers were merely scratching the surface when the focus was on container scaling and networking . 
+
+Then everyone realized that entire applications could not take advantage of containerization because of that one component of that application that needed to manage state. 
+
+> ### In Enterprises there are new applications that are developed on container technologies , applications that refuse to move to container technologies and then there are containerized monoliths
+
+Then came the first generation of Persistence support for Containers
 
 ![](https://i2.wp.com/softwareengineeringdaily.com/wp-content/uploads/2018/09/image1.png)
 
