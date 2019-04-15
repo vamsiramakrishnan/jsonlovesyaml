@@ -69,7 +69,10 @@ This issue gets exacerbated further in enterprises
 
 Containerized monoliths have very strong focus on persistence using share everything and share nothing storage.
 
-They run on App Servers like Weblogic, Websphere, JBoss
+* They run in highly restricted environments like DMZs.
+* They follow the traditional 3 tier architecture. 
+* Run on App Servers like Weblogic, Websphere, JBoss etc.
+* They communicate to Web Servers, Database servers, Enterprise Service Bus
 
 ### Design Considerations for Container Native Storage Solution
 
