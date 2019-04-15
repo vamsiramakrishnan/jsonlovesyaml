@@ -12,7 +12,9 @@ image: "/assets/images/ceph.jpeg"
 color: "#C12D2D"
 
 ---
-Gone are the days where Kubernetes was an exclusive cloud construct. When there are robust private cloud solutions 
+Gone are the days where Kubernetes was an exclusive cloud construct. For Enterprises, a viable container strategy that allows them to move applications of all nature on-premises from PoC to production is absolutely indispensable. 
+
+Container Native Storage is a key component to ensure enterprises' success in this journey of modernization. 
 
 ### If Containers are stateless why do they need storage ?
 
@@ -48,11 +50,11 @@ Then everyone realized that entire applications could not take advantage of cont
 
 ### Why ?
 
-Containers move dynamically across different Nodes/ VMs in a clustered environment during their lifecycle. 
+Containers move dynamically across different Nodes/ VMs in a clustered environment during their lifecycle.
 
-While data written by the containers onto storage provisioned the conventional way cannot ( Eg.HostPath) so instead of moving data , we need to move volumes and the attachment of volumes across VMs where containers get scheduled. 
+While data written by the containers onto storage provisioned the conventional way cannot ( Eg.HostPath) so instead of moving data , we need to move volumes and the attachment of volumes across VMs where containers get scheduled.
 
-Even if we do manage to use NFS , the problem is that NFS Mounts need to be created and mounted across every node in the cluster and has to be repeated for every additional node that gets added. 
+Even if we do manage to use NFS , the problem is that NFS Mounts need to be created and mounted across every node in the cluster and has to be repeated for every additional node that gets added.
 
 ### In Enterprises
 
@@ -65,7 +67,7 @@ This issue gets exacerbated further in enterprises
 
 Containerized monoliths have very strong focus on persistence using share everything and share nothing storage.
 
-They run on App Servers like Weblogic, Websphere, JBoss 
+They run on App Servers like Weblogic, Websphere, JBoss
 
 ### Design Considerations for Container Native Storage Solution
 
@@ -81,7 +83,7 @@ They run on App Servers like Weblogic, Websphere, JBoss
 
 **Flexibility**: One solution to be able to manage both shared nothing and share everything storage architecture from an application standpoint
 
-* Can the same solution spin up block volumes , file storage and object storage for containers 
+* Can the same solution spin up block volumes , file storage and object storage for containers
 
 **Portable** : Should be just as portable as Containers are,
 
@@ -111,7 +113,7 @@ They run on App Servers like Weblogic, Websphere, JBoss
 * Thin provisioning
 * QoS by leveraging my heterogeneous hardware landscape
   * Distribute data across high and low performing hardware
-  * Use high and low performance hardware exclusively where needed. 
+  * Use high and low performance hardware exclusively where needed.
 
 ### Dumb Hardware | Smart Software
 
@@ -123,18 +125,18 @@ They run on App Servers like Weblogic, Websphere, JBoss
 
 ![](https://i2.wp.com/softwareengineeringdaily.com/wp-content/uploads/2018/09/image1.png)
 
-### Based on the factors evaluated, 
+### Based on the factors evaluated,
 
-A clear winner emerges 
+A clear winner emerges
 
-* Ceph 
+* Ceph
 
 #### Why ?
 
 * _Open source and no additional license costs_
 * _Backed by a strong community_
 * _Battle tested for 10 + years_
-* _Distributed and scalable, transparent to application_ 
+* _Distributed and scalable, transparent to application_
 * _Supported under Oracle Linux Premier Support Contract_
 * _Can work across all types of storage that are presentable to VMs from JBODs to SANs_
 * _Supports Striping / Erasure Coding/ HA/ DR/ Encryption_
@@ -142,11 +144,11 @@ A clear winner emerges
 * _Hardware / Cloud Vendor Agnostic_
 * _Same setup on-premise and on the cloud_
 * _Can be extended using Rook to reduce administration overhead on Kubernetes_
-* _Can be isolated from the multiple Kubernetes Clusters which is typical in an enterprise environment_ 
+* _Can be isolated from the multiple Kubernetes Clusters which is typical in an enterprise environment_
 
 #### What others made it
 
-* Gluster + Heketi 
+* Gluster + Heketi
 
 ### Further Reading
 
