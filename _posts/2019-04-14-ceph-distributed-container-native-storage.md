@@ -130,8 +130,10 @@ A clear winner emerges
 
 #### Why ?
 
-* _Open source_
-* _Distributed_
+* _Open source and no additional license costs_
+* _Backed by a strong community_
+* _Battle tested for 10 + years_
+* _Distributed and scalable, transparent to application_ 
 * _Supported under Oracle Linux Premier Support Contract_
 * _Can work across all types of storage that are presentable to VMs from JBODs to SANs_
 * _Supports Striping / Erasure Coding/ HA/ DR/ Encryption_
@@ -141,4 +143,13 @@ A clear winner emerges
 * _Can be extended using Rook to reduce administration overhead on Kubernetes_
 * _Can be isolated from the multiple Kubernetes Clusters which is typical in an enterprise environment_ 
 
-### 
+#### What others made it
+
+* Gluster + Heketi 
+
+### Further Reading
+
+* [https://www.networkcomputing.com/data-centers/gluster-vs-ceph-open-source-storage-goes-head-head](https://www.networkcomputing.com/data-centers/gluster-vs-ceph-open-source-storage-goes-head-head "https://www.networkcomputing.com/data-centers/gluster-vs-ceph-open-source-storage-goes-head-head")
+* [https://medium.com/vescloud/kubernetes-storage-performance-comparison-9e993cb27271](https://medium.com/vescloud/kubernetes-storage-performance-comparison-9e993cb27271 "https://medium.com/vescloud/kubernetes-storage-performance-comparison-9e993cb27271")
+* [https://searchstorage.techtarget.com/tip/GlusterFS-vs-Ceph-Weighing-the-open-source-combatants](https://searchstorage.techtarget.com/tip/GlusterFS-vs-Ceph-Weighing-the-open-source-combatants "https://searchstorage.techtarget.com/tip/GlusterFS-vs-Ceph-Weighing-the-open-source-combatants")
+* [https://technologyadvice.com/blog/information-technology/ceph-vs-gluster/](https://technologyadvice.com/blog/information-technology/ceph-vs-gluster/ "https://technologyadvice.com/blog/information-technology/ceph-vs-gluster/")
