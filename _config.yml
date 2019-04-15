@@ -49,6 +49,7 @@ authors:
   sanjeev:
     name: Sanjeev
     site: https://in.linkedin.com/in/sanjeev-gopinath-28595b21
+    bio: IaaS & PaaS Pre-Sales at Oracle, Debug Ninja, Ex-MSFT
 markdown: kramdown
 highlighter: rouge
 paginate: 10
