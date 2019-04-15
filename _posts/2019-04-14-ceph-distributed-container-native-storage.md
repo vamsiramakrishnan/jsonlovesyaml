@@ -11,6 +11,8 @@ image: "/assets/images/ceph.jpeg"
 color: "#C12D2D"
 
 ---
+Gone are the days where Kubernetes was an exclusive cloud construct. When there are robust private cloud solutions 
+
 ### If Containers are stateless why do they need storage ?
 
 > _Je n’ai fait celle-ci plus longue que parce que je n’ai pas eu le loisir de la faire plus courte. - Charles Babbage
@@ -62,6 +64,8 @@ This issue gets exacerbated further in enterprises
 
 Containerized monoliths have very strong focus on persistence using share everything and share nothing storage.
 
+They run on App Servers like Weblogic, Websphere, JBoss 
+
 ### Design Considerations for Container Native Storage Solution
 
 **Presentable** : Storage should be presentable to Containers
@@ -73,6 +77,10 @@ Containerized monoliths have very strong focus on persistence using share everyt
 
 * Can I define a YAML file / JSON File to provision storage
 * Declarative file that allows me to provision storage for my containers
+
+**Flexibility**: One solution to be able to manage both shared nothing and share everything storage architecture from an application standpoint
+
+* Can the same solution spin up block volumes , file storage and object storage for containers 
 
 **Portable** : Should be just as portable as Containers are,
 
@@ -99,8 +107,10 @@ Containerized monoliths have very strong focus on persistence using share everyt
 
 * Can I take snapshots of the data stored and restore it ?
 * How easy is it to replicate it across geographies
-* Make sure I can have fine grained control over number of copies | which part of my hardware
 * Thin provisioning
+* QoS by leveraging my heterogeneous hardware landscape
+  * Distribute data across high and low performing hardware
+  * Use high and low performance hardware exclusively where needed. 
 
 ### Dumb Hardware | Smart Software
 
@@ -111,5 +121,24 @@ Containerized monoliths have very strong focus on persistence using share everyt
 ### The Landscape
 
 ![](https://i2.wp.com/softwareengineeringdaily.com/wp-content/uploads/2018/09/image1.png)
+
+### Based on the factors evaluated, 
+
+A clear winner emerges 
+
+* Ceph 
+
+#### Why ?
+
+* _Open source_
+* _Distributed_
+* _Supported under Oracle Linux Premier Support Contract_
+* _Can work across all types of storage that are presentable to VMs from JBODs to SANs_
+* _Supports Striping / Erasure Coding/ HA/ DR/ Encryption_
+* _Can provide FSS , Object Storage and Block Volumes to both Docker and Kubernetes through volume provisioners_
+* _Hardware / Cloud Vendor Agnostic_
+* _Same setup on-premise and on the cloud_
+* _Can be extended using Rook to reduce administration overhead on Kubernetes_
+* _Can be isolated from the multiple Kubernetes Clusters which is typical in an enterprise environment_ 
 
 ### 
