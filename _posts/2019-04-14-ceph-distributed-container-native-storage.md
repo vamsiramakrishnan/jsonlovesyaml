@@ -6,6 +6,7 @@ categories:
 - cloudnative
 - kubernetes
 tags:
+- featured
 - sticky
 image: "/assets/images/ceph.jpeg"
 color: "#C12D2D"
