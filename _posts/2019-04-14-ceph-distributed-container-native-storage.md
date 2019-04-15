@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ceph - On Premises Container Native Storage
+title: The search for On Premises Container Native Storage
 author: vamsi
 categories:
 - cloudnative
@@ -11,6 +11,7 @@ image: "/assets/images/ceph.jpeg"
 color: "#C12D2D"
 
 ---
+
 ### If Containers are stateless why do they need storage ?
 
 > _Je n’ai fait celle-ci plus longue que parce que je n’ai pas eu le loisir de la faire plus courte. - Charles Babbage
@@ -41,12 +42,18 @@ Then everyone realized that entire applications could not take advantage of cont
 
 > _Along came the first generation of Persistence support for Containers in form of HostPaths, NFS Mounts etc._ 
 
+**_This was barely sufficient_** 
+
+### Why ?
+
 ### In Enterprises 
 
 * There are new applications that are developed on container technologies
 * Applications that refuse to move to container technologies and 
 
 > #### then there are **_containerized monoliths_**
+
+Containerized monoliths have very strong focus on persistence using share everything and share nothing storage. 
 
 ![](https://i2.wp.com/softwareengineeringdaily.com/wp-content/uploads/2018/09/image1.png)
 
