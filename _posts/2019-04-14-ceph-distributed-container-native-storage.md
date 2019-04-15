@@ -16,6 +16,7 @@ Gone are the days where Kubernetes was an exclusive cloud construct. For Enterpr
 
 Container Native Storage is a key component to ensure enterprises' success in this journey of modernization. 
 
+
 ### If Containers are stateless why do they need storage ?
 
 > _Je n’ai fait celle-ci plus longue que parce que je n’ai pas eu le loisir de la faire plus courte. - Charles Babbage
@@ -44,11 +45,18 @@ In the beginning everything was rosy when containers were merely scratching the 
 
 Then everyone realized that entire applications could not take advantage of containerization because of that one component of that application that needed to manage state.
 
-> _Along came the first generation of Persistence support for Containers in form of HostPaths, NFS Mounts etc._
+
+_Along came the first generation of Persistence support for Containers in form of HostPaths, NFS Mounts etc._
 
 Then came the second wave of volume provisioners and container native storage solutions. But there was barely any focus on on-premises container native storage.
 
-**_This was barely sufficient_**
+<div class="alert alert-orange mt-5 d-flex align-items-center">
+    <div>
+            <span class="align-self-center iconbox iconsmall fill rounded-circle bg-danger text-white shadow border-0 mr-2"><i class="fas fa-bullhorn"></i>
+            </span>
+        </div>
+    This was Barely Sufficient
+</div>
 
 ### Why ?
 
