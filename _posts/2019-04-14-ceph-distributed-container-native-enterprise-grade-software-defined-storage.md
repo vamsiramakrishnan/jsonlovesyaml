@@ -28,9 +28,17 @@ Roughly translated to
 
 > ##### _Are only stateless (parts of) applications suitable for containerization ?_
 
+![](/assets/images/twist2.jpeg)
+
 #### Twist it a little further
 
 > ##### _Are containers suited to run only stateless applications ?_
+
+### Procrastination can't be forever.
+
+In the beginning everything was rosy when containers were merely scratching the surface and then everyone realized that 
+
+![](https://i2.wp.com/softwareengineeringdaily.com/wp-content/uploads/2018/09/image1.png)
 
 ### Design Considerations for Container Native Storage Solution
 
