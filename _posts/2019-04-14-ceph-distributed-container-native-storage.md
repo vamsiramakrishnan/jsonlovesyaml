@@ -1,3 +1,16 @@
+---
+layout: post
+title: Ceph - On Premises Container Native Storage
+author: vamsi
+categories:
+- cloudnative
+- kubernetes
+tags:
+- sticky
+image: "/assets/images/ceph.jpeg"
+color: "#C12D2D"
+
+---
 ### If Containers are stateless why do they need storage?
 
 > _Je n’ai fait celle-ci plus longue que parce que je n’ai pas eu le loisir de la faire plus courte. - Charles Babbage
