@@ -46,6 +46,9 @@ authors:
       Cloud.
     email: vamsi.ramakrishnan@oracle.com
     twitter: https://twitter.com/mrvemzi
+  sanjeev:
+    name: Sanjeev
+    site: https://in.linkedin.com/in/sanjeev-gopinath-28595b21
 markdown: kramdown
 highlighter: rouge
 paginate: 10
