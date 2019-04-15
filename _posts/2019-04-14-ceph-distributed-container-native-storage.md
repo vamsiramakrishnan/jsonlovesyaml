@@ -16,7 +16,7 @@ color: "#C12D2D"
 
 > _Je n’ai fait celle-ci plus longue que parce que je n’ai pas eu le loisir de la faire plus courte. - Charles Babbage
 
-![](/assets/images/CephCharles.jpg)
+![]("/assets/images/CephCharles.jpg")
 
 Roughly translated to
 
