@@ -30,13 +30,13 @@ Roughly translated to
 
 #### Twist it a little
 
-> ##### _Are only stateless (parts of) applications suitable for containerization ?_
+> ##### _Are only **stateless** (parts of) applications suitable for **containerization** ?_
 
 ![](../assets/images/twist2.jpeg)
 
 #### Twist it a little further
 
-> ##### _Are containers suited to run only stateless applications ?_
+> ##### _Are **containers** suited to run only **stateless** applications ?_
 
 ### Procrastination can't be forever.
 
@@ -45,6 +45,8 @@ In the beginning everything was rosy when containers were merely scratching the 
 Then everyone realized that entire applications could not take advantage of containerization because of that one component of that application that needed to manage state.
 
 > _Along came the first generation of Persistence support for Containers in form of HostPaths, NFS Mounts etc._
+
+Then came the second wave of volume provisioners and container native storage solutions. But there was barely any focus on on-premises container native storage.
 
 **_This was barely sufficient_**
 
