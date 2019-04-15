@@ -6,7 +6,7 @@ favicon: 'assets/images/favicon.ico'
 baseurl: '/jsonlovesyaml'
 disqus: 'jsonlovesyaml'
 email: 'vamsi.ramakrishnan@oracle.com'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+mailchimp-list: 'https://mailchi.mp/8c069e177357/jsonlovesyaml'
 
 include: ["_pages"]
 permalink: /:title/
