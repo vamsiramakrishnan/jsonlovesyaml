@@ -11,7 +11,7 @@ image: "/assets/images/ceph.jpeg"
 color: "#C12D2D"
 
 ---
-### If Containers are stateless why do they need storage?
+### If Containers are stateless why do they need storage ?
 
 > _Je n’ai fait celle-ci plus longue que parce que je n’ai pas eu le loisir de la faire plus courte. - Charles Babbage
 
@@ -35,19 +35,18 @@ Roughly translated to
 
 ### Procrastination can't be forever.
 
-In the beginning everything was rosy when containers were merely scratching the surface when the focus was on container scaling and networking .
+In the beginning everything was rosy when containers were merely scratching the surface and the focus was primarily on container scaling and networking .
 
 Then everyone realized that entire applications could not take advantage of containerization because of that one component of that application that needed to manage state.
 
-> #### In Enterprises 
->
-> #### there are new applications that are developed on container technologies 
->
-> #### applications that refuse to move to container technologies and 
->
-> #### then there are **_containerized monoliths_**
+> _Along came the first generation of Persistence support for Containers in form of HostPaths, NFS Mounts etc._ 
 
-Then came the first generation of Persistence support for Containers
+### In Enterprises 
+
+* There are new applications that are developed on container technologies
+* Applications that refuse to move to container technologies and 
+
+> #### then there are **_containerized monoliths_**
 
 ![](https://i2.wp.com/softwareengineeringdaily.com/wp-content/uploads/2018/09/image1.png)
 
@@ -93,5 +92,6 @@ Then came the first generation of Persistence support for Containers
 
 ### Dumb Hardware | Smart Software
 
-* The intelligence of my container native storage solution should arise from Software not hardware
-* This makes my storage solution extensible and can co-exist with a heterogeneous storage and compute landscape
+**_The intelligence of my container native storage solution should arise from Software not hardware_**
+
+> _This makes my storage solution extensible and can co-exist with a heterogeneous storage and compute landscape_
