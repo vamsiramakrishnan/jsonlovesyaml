@@ -45,7 +45,15 @@ Then everyone realized that entire applications could not take advantage of cont
 
 ### Why ?
 
+Containers move dynamically across different Nodes/ VMs in a clustered environment during their lifecycle. 
+
+While data written by the containers onto storage provisioned the conventional way cannot ( Eg.HostPath) so instead of moving data , we need to move volumes and the attachment of volumes across VMs where containers get scheduled. 
+
+Even if we do manage to use NFS , the problem is that NFS Mounts need to be created and mounted across every node in the cluster and has to be repeated for every additional node that gets added. 
+
 ### In Enterprises
+
+This issue gets exacerbated further in enterprises
 
 * There are new applications that are developed on container technologies
 * Applications that refuse to move to container technologies and
@@ -53,8 +61,6 @@ Then everyone realized that entire applications could not take advantage of cont
 > #### then there are **_containerized monoliths_**
 
 Containerized monoliths have very strong focus on persistence using share everything and share nothing storage.
-
-![](https://i2.wp.com/softwareengineeringdaily.com/wp-content/uploads/2018/09/image1.png)
 
 ### Design Considerations for Container Native Storage Solution
 
@@ -101,3 +107,9 @@ Containerized monoliths have very strong focus on persistence using share everyt
 **_The intelligence of my container native storage solution should arise from Software not hardware_**
 
 > _This makes my storage solution extensible and can co-exist with a heterogeneous storage and compute landscape_
+
+### The Landscape
+
+![](https://i2.wp.com/softwareengineeringdaily.com/wp-content/uploads/2018/09/image1.png)
+
+### 
