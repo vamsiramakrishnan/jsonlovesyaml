@@ -1,5 +1,5 @@
 ---
-title: Why Pivotal / Openshift will do very little to provide agility to your enterprise
+title: The hardest part for scaling Kubernetes in an On-Premises Data Center
 date: 2019-04-21 12:08:00 +05:30
 categories:
 - kubernetes
@@ -11,10 +11,15 @@ author: vamsi
 layout: post
 ---
 
-Unless you've living under a rock you have read/experienced how container technology is re-defining the enterprise IT space. Containers are the new VMs. To oversimplify it
+<u>P.S: I work for Oracle but the views expressed in this article are my own.</u>
 
-### `Docker / LxC/ Kata/ Rkt = VMs`
+Unless you've been living under a rock, you have read/experienced how container technology is re-defining the enterprise IT. Containerization is the new kid on the virtualization block. To oversimplify it
 
-### `Kuberneres/Mesos = vSphere`
+**`Docker/LxC/Kata/Rkt = VMs `**
 
-Although I believe Pivotal and Openshift are great products, I strongly believe they would do very little to provide agility to your enterprise
+**`Kuberneres/Mesos = vSphere`**
+
+### 
+
+### 
+
