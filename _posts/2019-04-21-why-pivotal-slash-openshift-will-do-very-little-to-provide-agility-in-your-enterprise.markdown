@@ -1,6 +1,6 @@
 ---
-title: Networking is the real reason why enterprises find Kubernetes deployments don't
-  scale on-premises
+title: Networking is the real reason why Kubernetes deployments don't scale on-premises
+  for enterprises
 date: 2019-04-21 12:08:00 +05:30
 categories:
 - kubernetes
@@ -27,7 +27,7 @@ Read on if your enterprise Data Center/ IT Landscape has one/many the following 
 
 ##### Infrastructure :
 
-    - You have SAN Switches connecting multiple storage arrays from Hitachi/ Dell-EMC/ Oracle/ HPE
+    - You have SAN Switches connecting multiple storage arrays from Hitachi/ Dell-EMC
     - You have ESXi/ AIX / AHV/ KVM/ OVMs/ Hyper-V in your hypervisor landscape
     - You have both Intel and RISC Compute
     - You also have recently invested in some kind of HCI ( Hyper Converged Infrastructure ) 
@@ -38,6 +38,8 @@ Read on if your enterprise Data Center/ IT Landscape has one/many the following 
     - The majority of your app layer and middleware runs Weblogic, WebSphere, JBOSS, Tomcat. 
     - You only load balance your Web Tier 
     - Web Tier is mostly a reverse proxy
+
+### App / Infra Modernization Journey :   
 
 Please ignore this article if you have a Software Defined Data Center where you have implemented paradigms like
 
@@ -55,7 +57,7 @@ To simplify it
 
 ##### Q1. Will containers work for me ?
 
-**Yes**, they definitely are and can bring in significant benefits. The benefits snowball exponentially 
+**Yes**, they definitely are and can bring in significant benefits. The benefits snowball exponentially
 
 ##### Q2. Will containers work for me in my data center on-premises ?
 
@@ -63,9 +65,7 @@ To simplify it
 
 ##### Q3. If containers are so great, why are enterprises finding it hard to run applications on Kubernetes in production on their data centers ?
 
-    Myth 1 : 
-    DIY Kubernetes is hard  and buying an Enterprise Grade Kubernetes 
-    Solution  is easy
+DIY Kubernetes is hard and buying an enterprise grade Kubernetes solves all of my day-2 problems
 
 The word enterprise-grade Kubernetes is almost a cliche especially when every vendor thinks their baby is the most beautiful. While it is true that some paid solutions make provisioning easier (Some solutions better than the other )
 
