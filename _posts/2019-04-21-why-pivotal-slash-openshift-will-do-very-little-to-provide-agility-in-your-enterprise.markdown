@@ -30,7 +30,6 @@ Read on if your enterprise Data Center/ IT Landscape has one/many the following 
     - You have SAN Switches connecting multiple storage arrays from Hitachi/ Dell-EMC
     - You have ESXi/ AIX / AHV/ KVM/ OVMs/ Hyper-V in your hypervisor landscape
     - You have both Intel and RISC Compute
-    - You also have recently invested in some kind of HCI ( Hyper Converged Infrastructure ) 
 
 ##### Application/DB Landscape :
 
@@ -40,6 +39,14 @@ Read on if your enterprise Data Center/ IT Landscape has one/many the following 
     - Web Tier is mostly a reverse proxy
 
 ### App / Infra Modernization Journey :   
+
+`- You also have recently invested in HCI ( Hyper Converged Infrastructure ) , PaaS `
+
+Some of your net new workloads are demanding a container/cloud native environment within your data center
+
+- You are working on pivoting Service Oriented Architecture/ APIs to leverage and modernize legacy applications
+
+Refactoring  some of 
 
 Please ignore this article if you have a Software Defined Data Center where you have implemented paradigms like
 
