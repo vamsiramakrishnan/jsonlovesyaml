@@ -1,5 +1,6 @@
 ---
-title: Networking is the real reason why enterprises find Kubernetes deployments don't scale on-premises
+title: Networking is the real reason why enterprises find Kubernetes deployments don't
+  scale on-premises
 date: 2019-04-21 12:08:00 +05:30
 categories:
 - kubernetes
@@ -10,8 +11,6 @@ tags:
 author: vamsi
 layout: post
 ---
-
-
 
 <u>P.S: I work for Oracle but the views expressed in this article are my own.</u>
 
