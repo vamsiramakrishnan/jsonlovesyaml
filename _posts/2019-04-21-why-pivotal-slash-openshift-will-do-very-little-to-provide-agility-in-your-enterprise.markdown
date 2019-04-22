@@ -46,11 +46,25 @@ Read on if your enterprise Data Center/ IT Landscape has one/many the following 
 You also have 
 
 ```markdown
-- Recently invested in HCI ( Hyper Converged Infrastructure ) , PaaS and SaaS 
-- Some of your net new workloads are demanding a container/cloud native environment within your data center
-- You are working on pivoting Service Oriented Architecture/ APIs to leverage and modernize legacy applications
-- Started refactoring with/without ISV(s) some of to suit SOA/Microservices/API based patterns
+- Recently invested in 
+    HCI ( Hyper Converged Infrastructure ) 
+    PaaS 
+    SaaS 
+- Some of your net new workloads are demanding a
+    Container Native Storage 
+    Cloud native environment within your data center
+- You have started working on pivoting 
+    Service Oriented Architecture
+    Microservices
+    APIs
 ```
+
+While you have begun this journey, the following questions still remain
+
+- I see great potential for these systems in UAT but you are not sure how they will scale in production ?
+- How these Cloud Native Systems will non-invasively integrate with my existing data center infrastructure
+- How can I leverage my On-Prem ( Storage, Networking, Compute) investments for these cloud native architectures 
+- Not very confident about the robustness in security/isolation primitives for these paradigms
 
 Please ignore this article if you have a Software Defined Data Center where you have implemented paradigms like
 
@@ -66,7 +80,7 @@ To simplify it
     Docker/LxC/Kata/Rkt        = VMs
     Kuberneres/Mesos           = vSphere/vCenter 
 
-##### Q1. Will containers work for me ?
+##### Q1. Will containers work for me  ?
 
 **Yes**, they definitely are and can bring in significant benefits. The benefits snowball exponentially
 
