@@ -35,6 +35,8 @@ To simplify it
     Docker/LxC/Kata/Rkt        = VMs
     Kuberneres/Mesos           = vSphere/vCenter 
 
+![clean-cleaning-funny-2371.jpg](/uploads/clean-cleaning-funny-2371.jpg)
+
 ## Summary of points discussed further
 
 * It is simply easier to run your cloud native workloads on the public cloud, if you can.
