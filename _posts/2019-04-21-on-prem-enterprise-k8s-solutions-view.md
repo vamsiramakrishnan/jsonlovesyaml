@@ -47,6 +47,8 @@ To simplify it
 * Keep an eye out for the _licensing metrics on a per-pod/per-container based model_ which almost sounds like a penalty for scaling.
 * Beware of **_Kitchen sink solutions !!_**
 
+![](/assets/images/messy.jpeg)
+
 ## Read on if your enterprise Data Center/ IT Landscape has one/many the following characteristics.
 
 > The one word that sums up your IT Landscape is  "**Heterogenous**"
@@ -112,12 +114,12 @@ As an enterprise, if you cannot run these workloads on the cloud and you have un
 
 ### Myopic Solutions are an issue
 
-What ***Enterprise requirements ***usually overlooked by the one-solution fits all approach by vendors ?
+What **Enterprise requirements** usually overlooked by the one-solution fits all approach by vendors ?
 
 * Assuming you have
-  * Dev, UAT, PROD Environments
-  * 2 Tiers( the Web and App )
-  * 3 Apps
+  * Dev | UAT | PROD Environments
+  * Web | App Tier
+  * And 3 Apps
 
   I want them to run out of separate Kubernetes Clusters
   * Would I purchase (3x2x3) 12 HCI Boxes with separate licenses for a managed Kubernetes Service and PaaS ?
@@ -182,7 +184,7 @@ An example of how I could build a robust cloud-native stack without significant 
 
 All of these tools are Cloud-Agnostic / Truly re-usable in a multi-cloud, hybrid cloud environment. It is a combination of CNCF, Open-source, Enterprise Editions of upstream open sourced tools.
 
-![](../assets/images/onpremdevops_stack.png)
+![Courtesy: Xebia Labs](../assets/images/onpremdevops_stack.png "Courtesy: Xebia Labs")
 
 #### Q1. Will containers work for me  ?
 
