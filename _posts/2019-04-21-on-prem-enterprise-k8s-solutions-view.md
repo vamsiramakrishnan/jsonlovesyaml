@@ -1,6 +1,5 @@
 ---
-title: Networking & Co-existence with legacy is the real reason why Kubernetes deployments
-  aren't successful on-premises for enterprises
+title: 'Co-existence with legacy: The real On-Prem Kubernetes Roadblock'
 date: 2019-04-21 06:38:00 +0000
 categories:
 - kubernetes
@@ -40,13 +39,13 @@ To simplify it
 
 ## Summary of points discussed further
 
-* It is simply easier to run your cloud native workloads on the public cloud, if you can.
-* Managed solutions for Kubernetes on-premises will not necessarily make life easier for you. They are not magic beans.
-* Yes, they make provisioning and some parts of the Ops easier but is that really the biggest issue ?
-* Sometimes with these managed solutions you will need to cut your feet to fit the shoe.
-* It does not make sense to discuss a cloud native architecture in isolation without Software defined networking, storage and compute
-* Keep an eye out for the licensing metrics on a per-pod/per-container based model which almost sounds like a penalty for scaling.
-* Beware of Kitchen sink solutions !!
+* It is simply easier to _run your cloud native workloads on the public cloud_, if you can.
+* Managed solutions for Kubernetes on-premises will not necessarily make life easier for you. _They are not magic beans._
+* Yes, they make provisioning and some parts of the Ops easier but _is that really the biggest issue_ ?
+* Sometimes with these managed solutions _you will need to cut your feet to fit the shoe._
+* It does not make sense to _discuss a Kubernetes solution on-premises in isolation_. Software defined infrastructure is key to your success. 
+* Keep an eye out for the _licensing metrics on a per-pod/per-container based model_ which almost sounds like a penalty for scaling.
+* Beware of **_Kitchen sink solutions !!_**
 
 ## Read on if your enterprise Data Center/ IT Landscape has one/many the following characteristics.
 
@@ -94,9 +93,8 @@ You also have
 
 While you have begun this journey, the following questions still remain
 
-* I see great potential for these systems in UAT but you are not sure how they will scale in production ?
-* How these Cloud Native Systems will non-invasively integrate with my existing data center infrastructure
-* How can I leverage my On-Prem ( Storage, Networking, Compute) investments for these cloud native architectures
+* I see great potential for these systems in UAT/Sandbox but you are not quite sure how they will integrate to your DC infra in production ?
+* How can I leverage/re-purpose my On-Prem ( Storage, Networking, Compute) investments for these cloud native architectures
 * Not very confident about the robustness in security/isolation primitives for these paradigms
 
 ### It is simply easier to run Kubernetes on the Cloud
