@@ -1,6 +1,6 @@
 ---
-title: Networking & Co-existence with legacy is the real reason why Kubernetes deployments aren't successful on-premises
-  for enterprises
+title: Networking & Co-existence with legacy is the real reason why Kubernetes deployments
+  aren't successful on-premises for enterprises
 date: 2019-04-21 12:08:00 +05:30
 categories:
 - kubernetes
@@ -12,7 +12,6 @@ tags:
 author: vamsi
 layout: post
 ---
-
 
 <u>**Attention**:- I work for Oracle and the views expressed in this article are my own.</u> 
 
