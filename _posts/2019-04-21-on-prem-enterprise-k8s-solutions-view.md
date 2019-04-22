@@ -39,12 +39,12 @@ To simplify it
 
 ## Summary of points discussed further
 
-* It is simply easier to _run your cloud native workloads on the public cloud_, if you can.
-* Managed solutions for Kubernetes on-premises will not necessarily make life easier for you. _They are not magic beans._
-* Yes, they make provisioning and some parts of the Ops easier but _is that really the biggest issue_ ?
-* Sometimes with these managed solutions _you will need to cut your feet to fit the shoe._
-* It does not make sense to _discuss a Kubernetes solution on-premises in isolation_. Software defined infrastructure is key to your success. 
-* Keep an eye out for the _licensing metrics on a per-pod/per-container based model_ which almost sounds like a penalty for scaling.
+* It is simply easier to **_run your cloud native workloads on the public cloud_**, if you can.
+* Managed solutions for Kubernetes on-premises will not necessarily make life easier for you. **_They are not magic beans._**
+* Yes, they make provisioning and some parts of the Ops easier but **_is that really the biggest issue_ ?**
+* Sometimes with these managed solutions **_you will need to cut your feet to fit the shoe._**
+* It does not make sense to **_discuss a Kubernetes solution on-premises in isolation_.** Software defined infrastructure is key to your success.
+* Keep an eye out for the **_licensing metrics on a per-pod/per-container based model _**which almost sounds like a penalty for scaling.
 * Beware of **_Kitchen sink solutions !!_**
 
 ![](../assets/images/messy.jpeg)
@@ -105,8 +105,9 @@ While you have begun this journey, the following questions still remain
 * Kubernetes Managed Service from the cloud provider is not vendor-lock in
   because Workload portability is as simple as change in a line or two of code in your Kubernetes Manifest File . Eg.
 
-  StorageClass: 'ebs' --> StorageClass: 'oci'
-  Allows you to provision Oracle (OCI) Block Storage instead of Elastic Block Storage (AWS)
+      StorageClass: 'ebs' --> StorageClass: 'oci'
+      Allows you to provision Oracle (OCI) Block Storage 
+      instead of Elastic Block Storage (AWS)
 
 > If you have cloud-native workloads or plan to containerize your workloads, do yourself a favour, run them on the public cloud
 
@@ -117,11 +118,11 @@ As an enterprise, if you cannot run these workloads on the cloud and you have un
 What **Enterprise requirements** usually overlooked by the one-solution fits all approach by vendors ?
 
 * Assuming you have
-  * Dev | UAT | PROD Environments
-  * Web | App Tier
-  * And 3 Apps
+  * Dev / UAT / PROD Environments
+  * Web / App Tier
+  * And 3 Applications due for containerization
 
-  I want them to run out of separate Kubernetes Clusters
+  I have the requirement that they run on separate Kubernetes Clusters
   * Would I purchase (3x2x3) 12 HCI Boxes with separate licenses for a managed Kubernetes Service and PaaS ?
   * If yes, can I manage them using a single console ?
 
@@ -196,6 +197,7 @@ All of these tools are Cloud-Agnostic / Truly re-usable in a multi-cloud, hybrid
 
 #### Q3. What are my priorities when it comes to on-prem cloud native journey ?
 
-\* In the short term a software service provider/partner with your existing infrastructure and a flexible toolchain engineered to suit your needs will work better than a one-solution fits all approach.
+* In the short term a software service provider/partner with your existing infrastructure and a flexible toolchain engineered to suit your needs will work better than a one-solution fits all approach.
 
-\* In the long term, data center modernization with a robust SDN that supports container primitives and software defined everything is the way forward.
+
+* In the long term, data center modernization with a robust SDN that supports container primitives and software defined everything is the way forward.
