@@ -10,6 +10,7 @@ categories:
 tags:
 - featured
 author: vamsi
+image: "/uploads/01.jpg"
 layout: post
 ---
 
