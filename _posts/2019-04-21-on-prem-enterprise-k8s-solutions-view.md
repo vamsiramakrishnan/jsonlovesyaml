@@ -230,6 +230,6 @@ All of these tools are Cloud-Agnostic / Truly re-usable in a multi-cloud, hybrid
 
 #### Q3. What are my priorities when it comes to on-prem cloud native journey ?
 
-In the short term a software service provider/partner with your existing infrastructure and a flexible toolchain engineered to suit your needs will work better than a one-solution fits all approach.
+\* In the short term a software service provider/partner with your existing infrastructure and a flexible toolchain engineered to suit your needs will work better than a one-solution fits all approach.
 
-In the long term, data center modernization with a robust SDN that supports container primitives and software defined everything is the way forward.
+\* In the long term, data center modernization with a robust SDN that supports container primitives and software defined everything is the way forward.
