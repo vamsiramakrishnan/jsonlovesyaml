@@ -1,5 +1,4 @@
 ---
-
 label: BlogPost
 hide_body: false
 fields:
@@ -30,5 +29,3 @@ fields:
   label: color
   name: color
   description: Color of Text
-  
----
