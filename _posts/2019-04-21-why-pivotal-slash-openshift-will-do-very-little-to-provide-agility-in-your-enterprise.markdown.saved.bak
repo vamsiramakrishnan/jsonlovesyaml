@@ -16,9 +16,13 @@ layout: post
 <u>! I work for Oracle and the views expressed in this article are my own.</u>
 
 ### For the Impatient
+
 * Provisioning/Orchestration isn't the hard part when it comes to building cloud-native architectures on-premises.
-* The notion that you would need to buy expensive HCI and SDN within your data centers to realize the benefits of containers is  
+
+* The notion that you would need to buy expensive HCI and SDN within your data centers to realize the benefits of containers. 
+
 * What is worse is it will exacerbate the problem of heterogenous IT landscape creating islands. 
+
 * Provisioning, Configuration Management, Monitoring, Security can be build non-invasively using a combination of 
     - IAC ( Infrastructure as Code) - Terraform
     - Configuration Management - Ansible
