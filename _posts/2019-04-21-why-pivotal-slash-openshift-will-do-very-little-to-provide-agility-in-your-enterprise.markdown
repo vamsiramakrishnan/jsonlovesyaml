@@ -20,10 +20,13 @@ Read on if your enterprise Data Center/ IT Landscape has one/many the following 
 
 ##### Data Center/ Networking:
 
-    - Your Data Center has the concept of a DMZ/ Trusted and Untrusted Zones/ Internet - Intranet etc implemented using physical and logical networking constructs.  
+    - Your Data Center has implemented using physical and logical networking constructs. 
+        DMZ/ Non-DMZ 
+        Trusted and Untrusted Zones
+        Internet - Intranet   
     - Core Switches(L3) and Access Switches(L2) tie your data center together 
-    - You have a WAF, perimeter firewall, anti DDOS mostly from different vendors
-    - Your have a dedicated hardware load-balancer/ application delivery controller 
+    - WAF, perimeter firewall, anti DDOS mostly from different vendors
+    - a/many dedicated hardware load-balancer(s)/ application delivery controller(s)
 
 ##### Infrastructure :
 
@@ -40,13 +43,14 @@ Read on if your enterprise Data Center/ IT Landscape has one/many the following 
 
 ### App / Infra Modernization Journey :   
 
-`- You also have recently invested in HCI ( Hyper Converged Infrastructure ) , PaaS `
+You also have 
 
-Some of your net new workloads are demanding a container/cloud native environment within your data center
-
+```markdown
+- Recently invested in HCI ( Hyper Converged Infrastructure ) , PaaS and SaaS 
+- Some of your net new workloads are demanding a container/cloud native environment within your data center
 - You are working on pivoting Service Oriented Architecture/ APIs to leverage and modernize legacy applications
-
-Refactoring  some of 
+- Started refactoring with/without ISV(s) some of to suit SOA/Microservices/API based patterns
+```
 
 Please ignore this article if you have a Software Defined Data Center where you have implemented paradigms like
 
