@@ -35,7 +35,7 @@ To simplify it
     Docker/LxC/Kata/Rkt        = VMs
     Kuberneres/Mesos           = vSphere/vCenter 
 
-!\[LockIn\](./uploads/pullIn.jpg)
+!\[LockIn\](../uploads/[pullIn.jpg](https://github.com/vamsiramakrishnan/jsonlovesyaml/blob/master/_uploads/pullIn.jpg "pullIn.jpg"))
 
 ## Summary of points discussed further
 
