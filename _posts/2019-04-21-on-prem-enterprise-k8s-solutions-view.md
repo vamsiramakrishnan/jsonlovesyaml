@@ -35,7 +35,7 @@ To simplify it
     Docker/LxC/Kata/Rkt        = VMs
     Kuberneres/Mesos           = vSphere/vCenter 
 
-![pullIn.jpg](/uploads/pullIn.jpg)
+!\[LockIn\](./uploads/pullIn.jpg)
 
 ## Summary of points discussed further
 
@@ -114,8 +114,8 @@ While you have begun this journey, the following questions still remain
 * Kubernetes Managed Service from the cloud provider is not vendor-lock in
   because Workload portability is as simple as change in a line or two of code in your Kubernetes Manifest File . Eg.
 
-    StorageClass: 'ebs' --> StorageClass: 'oci'
-    Allows you to provision Oracle (OCI) Block Storage instead of Elastic Block Storage (AWS)
+  StorageClass: 'ebs' --> StorageClass: 'oci'
+  Allows you to provision Oracle (OCI) Block Storage instead of Elastic Block Storage (AWS)
 
 > If you have cloud-native workloads or plan to containerize your workloads, do yourself a favour, run them on the public cloud
 
@@ -123,7 +123,7 @@ As an enterprise, if you cannot run these workloads on the cloud and you have un
 
 ### Myopic Solutions are an issue
 
-What ***Enterprise requirements ***usually overlooked by the one-solution fits all approach by vendors ?
+What \*\*\*Enterprise requirements \*\*\*usually overlooked by the one-solution fits all approach by vendors ?
 
 * Assuming you have
 
