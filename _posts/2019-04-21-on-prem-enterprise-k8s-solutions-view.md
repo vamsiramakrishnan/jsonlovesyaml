@@ -47,7 +47,7 @@ To simplify it
 * Keep an eye out for the _licensing metrics on a per-pod/per-container based model_ which almost sounds like a penalty for scaling.
 * Beware of **_Kitchen sink solutions !!_**
 
-![](/assets/images/messy.jpeg)
+![](../assets/images/messy.jpeg)
 
 ## Read on if your enterprise Data Center/ IT Landscape has one/many the following characteristics.
 
