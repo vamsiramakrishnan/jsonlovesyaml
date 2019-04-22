@@ -35,7 +35,7 @@ To simplify it
     Docker/LxC/Kata/Rkt        = VMs
     Kuberneres/Mesos           = vSphere/vCenter 
 
-![clean-cleaning-funny-2371.jpg](/uploads/clean-cleaning-funny-2371.jpg)
+![pullIn.jpg](/uploads/pullIn.jpg)
 
 ## Summary of points discussed further
 
