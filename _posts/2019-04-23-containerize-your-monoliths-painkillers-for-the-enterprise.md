@@ -11,7 +11,7 @@ color: "#EE0E0E"
 date: 2019-04-23 12:43:53 +0000
 
 ---
-To many CIOs the promise of microservices is a lot like the promise of heaven. But what about right now ? Life is happening now !!
+##### To many CIOs the promise of microservices is a lot like the promise of heaven after death. But what about right now ? Life is happening now !!
 
 > How the CIO probably hears your delightful insights on Microservices
 
@@ -25,14 +25,13 @@ Since most of the enterprise applications run Java-EE Applications, I will speak
 
 ### How
 
-1. Pick an App 
-2. Go to App Server 
-3. Find the containerized version of the app server on DockerHub
-4. Deploy the containerized version of app server into a Kubernetes Cluster
-5. Deploy the JAR/WAR/EAR File like nothing ever changed
-6. See if it works
-7. Customize and harden your app server 
-8. Repeat !
+1. Pick an Application and get to know what app server it runs on
+2. Find the containerized version of the app server on DockerHub
+3. Deploy the containerized version of app server into a Kubernetes Cluster
+4. Deploy the JAR/WAR/EAR File like nothing ever changed
+5. See if it works
+6. Customize and harden your app server 
+7. Repeat !
 
 ### Containerizing monoliths within an enterprise help me solve ..
 
@@ -63,3 +62,32 @@ In simple words
 * You may need the support of your ISV to smoothen some rough edges but it definitely is not re-architecting or re-factoring. 
 
 This approach not only allows you to learn quickly from failures, but also helps you build a case for re-architecting. 
+
+### Pitfalls to watch out for 
+
+> Not all App Servers are born equal 
+
+* You may or may not find your application server's containerized version. 
+* Sometimes you may not find the full feature set in the containerized version
+* Sometimes these containerized versions may not be supported / recommended for production. 
+
+### Solutions to these pitfalls
+
+##### Weblogic on Kubernetes is a production ready, full feature-set enabled available for use. 
+
+##### Oracle also has released a containerized version of Coherence where caches that work closely with the application server can also move into Kubernetes. 
+
+##### It has also released an operator to simplify domain based deployments
+
+Some useful resources
+
+**Docker Images:** 
+
+* [https://hub.docker.com/r/oracle/weblogic-kubernetes-operator](https://hub.docker.com/r/oracle/weblogic-kubernetes-operator "https://hub.docker.com/r/oracle/weblogic-kubernetes-operator")
+* [https://hub.docker.com/_/oracle-weblogic-server-12c](https://hub.docker.com/_/oracle-weblogic-server-12c "https://hub.docker.com/_/oracle-weblogic-server-12c")
+
+**Source Code:**
+
+* [https://github.com/oracle/weblogic-kubernetes-operator](https://github.com/oracle/weblogic-kubernetes-operator "https://github.com/oracle/weblogic-kubernetes-operator")
+
+There will be a technology deep dive post elaborating about the facts articulated above. 
