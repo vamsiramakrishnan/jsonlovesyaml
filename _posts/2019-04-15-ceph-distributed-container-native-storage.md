@@ -1,6 +1,6 @@
 ---
 title: The search for On Premises Container Native Storage
-date: 2019-04-15 00:00:00 Z
+date: 2019-04-15 00:00:00 +0000
 categories:
 - cloudnative
 - kubernetes
@@ -11,12 +11,11 @@ layout: post
 author: vamsi
 image: "/assets/images/ceph.jpeg"
 color: "#C12D2D"
+
 ---
+Gone are the days where Kubernetes was an exclusive cloud construct. For Enterprises, a viable container strategy that allows them to move applications of all nature on-premises from PoC to production is absolutely indispensable.
 
-Gone are the days where Kubernetes was an exclusive cloud construct. For Enterprises, a viable container strategy that allows them to move applications of all nature on-premises from PoC to production is absolutely indispensable. 
-
-Container Native Storage is a key component to ensure enterprises' success in this journey of modernization. 
-
+Container Native Storage is a key component to ensure enterprises' success in this journey of modernization.
 
 ### If Containers are stateless why do they need storage ?
 
@@ -46,17 +45,16 @@ In the beginning everything was rosy when containers were merely scratching the 
 
 Then everyone realized that entire applications could not take advantage of containerization because of that one component of that application that needed to manage state.
 
-
 _Along came the first generation of Persistence support for Containers in form of HostPaths, NFS Mounts etc._
 
 Then came the second wave of volume provisioners and container native storage solutions. But there was barely any focus on on-premises container native storage.
 
 <div class="alert alert-orange mt-5 d-flex align-items-center">
-    <div>
-            <span class="align-self-center iconbox iconsmall fill rounded-circle bg-danger text-white shadow border-0 mr-2"><i class="fas fa-bullhorn"></i>
-            </span>
-        </div>
-    This was Barely Sufficient
+<div>
+<span class="align-self-center iconbox iconsmall fill rounded-circle bg-danger text-white shadow border-0 mr-2"><i class="fas fa-bullhorn"></i>
+</span>
+</div>
+This was Barely Sufficient
 </div>
 
 ### Why ?
@@ -79,7 +77,7 @@ This issue gets exacerbated further in enterprises
 Containerized monoliths have very strong focus on persistence using share everything and share nothing storage.
 
 * They run in highly restricted environments like DMZs.
-* They follow the traditional 3 tier architecture. 
+* They follow the traditional 3 tier architecture.
 * Run on App Servers like Weblogic, Websphere, JBoss etc.
 * They communicate to Web Servers, Database servers, Enterprise Service Bus
 
