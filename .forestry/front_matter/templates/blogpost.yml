@@ -29,3 +29,5 @@ fields:
   label: color
   name: color
   description: Color of Text
+pages:
+- _posts/containerize-your-monoliths-painkillers-for-the-enterprise.md
