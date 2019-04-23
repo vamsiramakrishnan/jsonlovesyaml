@@ -58,7 +58,7 @@ In simple words
 
 ![](./assets/images/CattleNotPets.png)
 
-#### Build a strong business case for microservices (if needed) and without an obscenely high bill from your ISV 
+#### Build a strong business case for microservices (if needed) and bypass an obscenely high bill from your ISV 
 
 > From a software delivery perspective , nothing changes in your build or your / the ISV's build process or architecture
 
