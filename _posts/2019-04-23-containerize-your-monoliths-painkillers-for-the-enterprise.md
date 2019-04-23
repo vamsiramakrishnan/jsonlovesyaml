@@ -11,7 +11,9 @@ color: "#EE0E0E"
 date: 2019-04-23 12:43:53 +0000
 
 ---
-##### To many CIOs the promise of microservices is a lot like the promise of heaven after death. But what about right now ? Life is happening now !!
+### To many CIOs the promise of microservices is a lot like the promise of heaven after death. 
+
+### But what about right now ? Life is happening now !!
 
 > How the CIO probably hears your delightful insights on Microservices
 
@@ -19,7 +21,9 @@ date: 2019-04-23 12:43:53 +0000
 
 > Just because containerizing monoliths fixes some problems quickly and easily, doesn't mean it is a bad solution. 
 
-Functional Decomposition is not a security patch or a scalability hack and is not mandatory. You may need it, you may not. Depends on the scale, speed of software changes, number of players involved, the surgical precision to which you want to scale a part of the application. 
+* Functional Decomposition is not a security patch or a scalability hack and is not mandatory. 
+* You may need it, you may not. 
+* The need depends on the scale, velocity of software changes, the surgical precision to which you want to scale a part of the application. 
 
 Since most of the enterprise applications run Java-EE Applications, I will speak about them
 
@@ -52,7 +56,7 @@ In simple words
 
 > No more snowflakes, Only Cattle Not Pets
 
-![](/assets/images/CattleNotPets.png)
+![](./assets/images/CattleNotPets.png)
 
 #### Build a strong business case for microservices (if needed) and without an obscenely high bill from your ISV 
 
@@ -73,21 +77,11 @@ This approach not only allows you to learn quickly from failures, but also helps
 
 ### Solutions to these pitfalls
 
-##### Weblogic on Kubernetes is a production ready, full feature-set enabled available for use. 
+* **Weblogic on Kubernetes** is a production ready, full feature-set enabled available for use. 
 
-##### Oracle also has released a containerized version of Coherence where caches that work closely with the application server can also move into Kubernetes. 
+* Oracle also has released a containerized version of Coherence 
+* You can address the movement of **caches** that work closely with the application server can also move into Kubernetes. 
 
-##### It has also released an operator to simplify domain based deployments
+* It has also released an operator to simplify domain based deployments on Kubernetes
 
-Some useful resources
-
-**Docker Images:** 
-
-* [https://hub.docker.com/r/oracle/weblogic-kubernetes-operator](https://hub.docker.com/r/oracle/weblogic-kubernetes-operator "https://hub.docker.com/r/oracle/weblogic-kubernetes-operator")
-* [https://hub.docker.com/_/oracle-weblogic-server-12c](https://hub.docker.com/_/oracle-weblogic-server-12c "https://hub.docker.com/_/oracle-weblogic-server-12c")
-
-**Source Code:**
-
-* [https://github.com/oracle/weblogic-kubernetes-operator](https://github.com/oracle/weblogic-kubernetes-operator "https://github.com/oracle/weblogic-kubernetes-operator")
-
-There will be a technology deep dive post elaborating about the facts articulated above. 
+There will be a follow up technology deep dive post elaborating about the facts articulated above. 
