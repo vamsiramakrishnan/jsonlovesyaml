@@ -75,20 +75,20 @@ This approach not only allows you to learn quickly from failures, but also helps
 * Sometimes you may not find the full feature set in the containerized version
 * Sometimes these containerized versions may not be supported / recommended for production.
 
-### Other concerns that enterprises usually have 
+### Other concerns that enterprises usually have
 
-* _Sounds great but who will certify and support Kubernetes issues ?_ 
+* _Sounds great but who will certify and support Kubernetes issues ?_
 
-  Oracle Linux Premier support covers all CNCF components which include both Docker and Kubernetes 
+  Oracle Linux Premier support covers all CNCF components which include both Docker and Kubernetes
 * _Do I need special tools for monitoring and alerting the Kubernetes Cluster ?_
 
-  If your existing monitoring solution has an add on for kubernetes you could use that , or you could use Prometheus and Grafana and integrate it with Nagios for eg. or use the alert manager from Prometheus itself. 
+  If your existing monitoring solution has an add on for kubernetes you could use that , or you could use Prometheus and Grafana and integrate it with Nagios for eg. or use the alert manager from Prometheus itself.
 
 ### Solutions to these pitfalls
 
 * **Weblogic on Kubernetes** is a production ready, full feature-set  Java EE server available for use.
 * Oracle has also released a containerized version of **Coherence**
-* You can easily address the movement of the **caching layer** into Kubernetes. 
+* You can easily address the movement of the **caching layer** into Kubernetes.
 * It has also released an **operator pattern** to simplify domain based deployments on Kubernetes
 
-There will be a follow up technology deep dive post elaborating the steps to follow exactly would you containerise 
+There will be a follow up technology deep dive post elaborating the steps to follow and best practices to adhere to and also look at an app server migration strategy if applicable. 
