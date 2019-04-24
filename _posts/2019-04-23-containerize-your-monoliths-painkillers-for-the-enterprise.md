@@ -60,6 +60,8 @@ In simple words
 
 #### Build a strong business case for microservices (if needed) and bypass an obscenely high bill from your ISV
 
+Containerizing your monoliths and getting portability and scalability can help build a case for your Business Sponsors to invest in decomposing and modularising your application into microservices  
+
 > From a software delivery perspective , nothing changes in your build or your / the ISV's build process or architecture
 
 * Your JAR/WAR/EAR is safely wrapped inside the Java EE Application Server
