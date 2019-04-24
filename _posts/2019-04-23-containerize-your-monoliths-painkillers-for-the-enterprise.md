@@ -19,7 +19,11 @@ date: 2019-04-23 12:43:53 +0000
 
 ![Image result for microservices jokes](http://jonasboner.com/images/posts/bla-bla-microservices-bla-bla/bla_bla_microservices_bla_bla_pdf__page_30_of_31_.png)
 
-> Just because containerizing monoliths fixes some problems quickly and easily, doesn't mean it is a bad solution.
+> Just because containerizing monoliths fixes some problems quickly and easily, doesn't mean it will fix it all .
+
+at the same time 
+
+> A quick and simple fix isn’t necessarily a bad move either
 
 * Functional Decomposition is not a security patch or a scalability hack and is not mandatory.
 * You may need it, you may not.
@@ -60,7 +64,7 @@ In simple words
 
 #### Build a strong business case for microservices (if needed) and bypass an obscenely high bill from your ISV
 
-Containerizing your monoliths and getting portability and scalability can help build a case for your Business Sponsors to invest in decomposing and modularising your application into microservices  
+Containerizing your monoliths and getting portability and scalability can help build a case for your Business Sponsors to invest in decomposing and modularising your application into microservices
 
 > From a software delivery perspective , nothing changes in your build or your / the ISV's build process or architecture
 
@@ -93,4 +97,4 @@ This approach not only allows you to learn quickly from failures, but also helps
 * You can easily address the movement of the **caching layer** into Kubernetes.
 * It has also released an **operator pattern** to simplify domain based deployments on Kubernetes
 
-There will be a follow up technology deep dive post elaborating the steps to follow and best practices to adhere to and also look at an app server migration strategy if applicable. 
+There will be a follow up technology deep dive post elaborating the steps to follow and best practices to adhere to and also look at an app server migration strategy if applicable.
