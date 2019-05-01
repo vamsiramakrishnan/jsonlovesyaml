@@ -29,3 +29,5 @@ fields:
   label: color
   name: color
   description: Color of Text
+pages:
+- _posts/enterprise-operations-nightmares-of-inheriting-a-multi-database-eventually-consistent-system.md
