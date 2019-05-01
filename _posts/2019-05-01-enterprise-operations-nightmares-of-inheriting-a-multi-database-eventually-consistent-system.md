@@ -7,8 +7,8 @@ tags:
 - sticky
 - featured
 layout: post
-title: 'Enterprise Operations : Nightmares of inheriting a multi database eventually
-  consistent system'
+title: 'Enterprise IT Operations : Eventually consistent backups mean permanently
+  inconsistent business'
 author: vamsi
 image: ''
 color: "#C43A3A"
