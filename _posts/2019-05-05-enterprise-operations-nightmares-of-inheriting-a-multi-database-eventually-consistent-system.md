@@ -13,15 +13,17 @@ image: ''
 color: "#C43A3A"
 
 ---
-Designing Microservices properly can be hard and solving how you would wish to store and organize data in this decomposed system. When the application is broken down into smaller services without mimicking the actual business problem that it solves.
+Designing Microservices properly can be hard . Solving how you would wish to store and organize data in this decomposed system is the toughest problem to solve.  When the application is broken down into smaller services without mimicking the actual business problem, cracks begin to appear and one ends up doing plumbing with the agile/ devops/ gitops/ noOps or whatever fad methodology it is for the rest of it's life. 
 
 > Bad design is everywhere but with microservices you won't even know what hit you
 
-> Falling for the allure and idealism that microservices promise is natural
+![](https://cdn-images-1.medium.com/max/1600/1*L7KkunNI2IfbxuHITYPEzQ.jpeg)
+
+![](/assets/images/AllureMicroservices.png)
 
 Domain driven design and defining context and domain in an application needs close collaboration between Business Expertise and Development and is a complex task. When this is done right, one can say we finally got SOA right through microservices.
 
-In this post I would like to touch upon the complexities a CIO would inherit; in a system that is hastily broken up into microservices and use one database per service to counter the philosophy that a 
+In this post I would like to touch upon the complexities a CIO would inherit; in a system that is hastily broken up into microservices and use one database per service to counter the philosophy that a
 
 This is a futuristic microservices application that
 
@@ -38,10 +40,10 @@ In short it is a lazy developer's dream come true and a nightmare for the team t
 
 Within its own bounded context ( If it exists ) the database may provide provide strong consistency but when you look at it as an overarching system you would see that there are some obvious problems
 
-How would one back this system up that runs multiple databases from multiple vendors and the onus of co-ordination lies with the application tier. There are two paths that a business can take 
+How would one back this system up that runs multiple databases from multiple vendors and the onus of co-ordination lies with the application tier. There are two paths that a business can take
 
-* Inconsistent business backups with maximum availability 
-* Consistent backups but with limited availability 
+* Inconsistent business backups with maximum availability
+* Consistent backups but with limited availability
 
 ### Inconsistent Business Backups, Maximum Availability
 
@@ -56,19 +58,21 @@ This is commonplace in a microservices architecture where design is done with fa
 
 Technically we call these
 
-* **Broken Links** : 
+* **Broken Links** :
 
   Broken links are why we sometimes get an apology email from an e-commerce vendor that they would give us store credits because they went out of stock even after we received an order number and confirmation ( Simplified for understanding )
-  1. The order database got updated 
-  2. The inventory database is just about to get updated 
-  3. My backup happened before the inventory database got updated 
+
+  In simple database terminology 
+  1. The order database got updated
+  2. The inventory database is just about to get updated
+  3. My backup happened before the inventory database got updated
   4. The inventory database gets updated but my backup does not have this information
-  5. The system crashed and I restored it 
-  6. The state of the system is such that my orders database has this information but my inventory database does not. 
-  7. Another order could get executed against the same item successfully needing a manual reconciliation process or 
-  8. My application could crash because it does not pass the referential integrity test of the orders database if it is enforced in it. 
-* **Orphan States :** When the e-commerce vendor sees a discrepancy in the bill against the number of orders that were shipped, he got billed for 6000 additional orders while he only processed 5900 orders that month. 
+  5. The system crashed and I restored it
+  6. The state of the system is such that my orders database has this information but my inventory database does not.
+  7. Another order could get executed against the same item successfully needing a manual reconciliation process or
+  8. My application could crash because it does not pass the referential integrity test of the orders database if it is enforced in it.
+* **Orphan States :** When the e-commerce vendor sees a discrepancy in the bill against the number of orders that were shipped, he got billed for 6000 additional orders while he only processed 5900 orders that month.
   1. Where the exact opposite of the missing links scenario happens
-  2. The orders database gets backed up before it can register 
+  2. The orders database gets backed up before it can register
 
 This may be agreeable to some use cases in some businesses, so what if i lost a couple comments and a couple posts in Facebook after recovery ? So what if I did not re-populate my video recommendations completely on Netflix after recovery
