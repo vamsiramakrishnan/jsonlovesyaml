@@ -15,17 +15,22 @@ color: "#C43A3A"
 ---
 ### For the impatient
 
-* Backups from eventually consistent systems are permanently inconsistent and obsolete
-* Co-ordinating Backups from distributed systems make it even worse
-* The worst is when these backups have to be co-ordinated between disparate databases. 
-* Sharing the database between microservices is an anti-pattern but co-ordinating how would one co-ordinate backups across databases 
-* Use domain driven design to sensibly isolate and decouple components of business logic that is  mutually exclusive 
-* Loosely coupling tightly coupled business entities for the sake of ease of development will make life harder as issues of establishing transactional boundaries and integrity come into play
+* Backups from eventually consistent systems are **_permanently inconsistent and obsolete or have risk of data loss_**
+* Co-ordinating Backups from distributed and eventually consistent systems make it even worse
+* The worst is when these backups have to be co-ordinated between disparate databases where data is split and stored. 
+
+  > Sharing the database between microservices is an anti-pattern 
+
+  But the ability to co-ordinate consistent backups between multiple independent databases is life-saving in a microservices architecture.  
+* Use domain driven design to sensibly isolate and decouple components of business logic that are mutually exclusive 
+* Loosely coupling/ decomoposing tightly coupled parts of a business transaction for the sake of ease of development will make life harder as issues of establishing transactional boundaries and integrity come into play
 * BAC Theorem
 
   > When one backs up data from multiple disparate databases in a microservices architecture it is impossible to have both consistency and availability
-* Oracle's Multi Tenant Architecture with Container Database design allows developers to isolate databases and operate pluggable databases as individual databases with independent schemas, tablespaces, users while executing coordinated backups without compromising transactional integrity
-* For Linear Horizontal Scalability and fault tolerance with ACID Compliance one may deploy oracle sharding. 
+* Even when I do _compromise availability for maintaining consistency_, for eventually consistent systems, it is important to measure _time to consistency_ and understand that I would have to _loose data or make the system unavailable_ for that time. 
+* Need to understand how checkpoints work in each of these database technologies and work with them and would have to build DIY code to make this happen. 
+* Oracle's Multi Tenant Architecture with Container Database design allows developers to isolate databases and operate pluggable databases as individual databases with independent schemas, tablespaces, users while executing coordinated backups without compromising transactional integrity 
+* For Linear Horizontal Scalability and fault tolerance with ACID Compliance one may deploy Oracle Sharding. 
 
 ### TL;DR
 
@@ -53,11 +58,11 @@ In this post I would like to touch upon the complexities a CIO would inherit; in
 
 The constant argument that we see from developers as the benefit of this architecture
 
-* The failure of one database does not bring app's my availability down. 
+* The failure of one database does not bring app's availability down. 
 
-Some transactions and businesses have the capacity to be modeled this way but some aren't.  For those applications where consistency is key 
+Some transactions and businesses have the capacity to be modeled this way but some aren't.  For those applications where **_consistency is key_** 
 
-> ##### The failure of One database, will force me to push all other databases back in time in order to recover to a consistent state. If I have managed to take a time-coordinated and consistent backup. 
+> ##### The failure of One database, will push all other databases back in time in order to recover to a consistent state. If I have managed to take a time-coordinated and consistent backup. 
 
 This is a futuristic microservices application that
 
@@ -102,15 +107,21 @@ Technically we call these
   1. The order database got updated
   2. The inventory database is just about to get updated
   3. The backup happened before the inventory database got updated
-  4. The inventory database gets updated but my backup does not have this information
+  4. The inventory database gets updated but the backup does not have this information
   5. The system crashed and I restored it
-  6. The state of the system is such that my orders database has this information but my inventory database does not.
+  6. The state of the system is such that the orders database has this information but the inventory database does not.
   7. Another order could get executed against the same item successfully needing a manual reconciliation process or
-  8. My application could crash because it does not pass the referential integrity test of the orders database if it is enforced in it.
+  8. The application could crash because it does not pass the referential integrity test of the orders database if it is enforced in it.
 * **Orphan States :** When the e-commerce vendor sees a discrepancy in the bill against the number of orders that were shipped, he got billed for 6000 additional orders while he only processed 5900 orders that month.
   1. Where the exact opposite of the missing links scenario happens
   2. The orders database gets backed up before it can register
 
-This may be agreeable to some use cases in some businesses, so what if i lost a couple comments and a couple posts in Facebook after recovery ? So what if I did not re-populate my video recommendations completely on Netflix after recovery
+This may be agreeable to some use cases in some businesses, so what if i lost a couple comments and a couple posts in Facebook after recovery ? So what if I did not re-populate video recommendations completely on Netflix after recovery
 
 ### Consistent Business Backups, Limited Availability
+
+Assuming that I have figured that I need to write a piece of code/ module that can co-ordinate with all databases, here are a bunch of challenges I would face with doing that 
+
+1. To be able to achieve a consistent time-coordinated backup, I should first be able to tell all the services that write/read data from databases to not do so until I create a Checkpoint, this only makes my backup time-coordinated. 
+2. A Checkpoint needs to be created when all the database systems have reached consistency 
+3. Depending on whether I am performing a full or incremental backup, all the systems will remain unavailable for which I am taking co-ordinated backups
