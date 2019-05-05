@@ -38,11 +38,11 @@ Designing Microservices the right way can be hard. Defining how one would wish t
 
 > Bad design is everywhere but with microservices you won't even know what hit you
 
-![](/assets/images/AllureMicroservices.png)
+![](./assets/images/AllureMicroservices.png)
 
 Domain driven design is one of the principles used to define context and boundaries of the application while keeping the overall business transaction in mind.
 
-![](/assets/images/TransactionalBoundaries.png)
+![](./assets/images/TransactionalBoundaries.png)
 
 When this is done right, one can say
 
@@ -77,7 +77,7 @@ This is a futuristic microservices application that
 
 In short it is a lazy developer's dream come true and a nightmare for the team that inherits it for operations and maintenance.
 
-![](/assets/images/sampleApplication.png)
+![](./assets/images/sampleApplication.png)
 
 Within its own bounded context ( If it exists ) the database may provide provide strong consistency but when you look at it as an overarching system you would see that there are some obvious problems
 
