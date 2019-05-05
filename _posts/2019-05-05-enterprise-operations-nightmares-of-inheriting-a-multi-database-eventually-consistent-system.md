@@ -38,7 +38,11 @@ In short it is a lazy developer's dream come true and a nightmare for the team t
 
 Within its own bounded context ( If it exists ) the database may provide provide strong consistency but when you look at it as an overarching system you would see that there are some obvious problems
 
-How would one back this system up that runs multiple databases from multiple vendors and the onus of co-ordination lies with the application tier. There are two paths that a business can take
+How would one back this system up that runs multiple databases from multiple vendors and the onus of co-ordination lies with the application tier. There are two paths that a business can take 
+
+Inconsistent business backups with maximum availability 
+
+Consistent backups but with limited availability 
 
 ### Inconsistent Business Backups, Maximum Availability
 
@@ -54,8 +58,6 @@ This is commonplace in a microservices architecture where design is done with fa
 Technically we call these
 
 * **Broken Links** : 
-
-  In database
 
   Broken links are why we sometimes get an apology email from an e-commerce vendor that they would give us store credits because they went out of stock even after we received an order number and confirmation ( Simplified for understanding )
   1. The order database got updated 
