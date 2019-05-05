@@ -125,3 +125,14 @@ Assuming that I have figured that I need to write a piece of code/ module that c
 1. To be able to achieve a consistent time-coordinated backup, I should first be able to tell all the services that write/read data from databases to not do so until I create a Checkpoint, this only makes my backup time-coordinated. 
 2. A Checkpoint needs to be created when all the database systems have reached consistency 
 3. Depending on whether I am performing a full or incremental backup, all the systems will remain unavailable for which I am taking co-ordinated backups
+
+   > All this DIY Magic to make all of them unavailable for until the slowest database finishes backing up 
+
+### Do yourself a favor 
+
+1. When you run through your first iteration of your application, use a shared database design pattern. 
+2. Agile IT plumbing does not mean agile business. Microservices can be done right if domain-driven design is given a close look. 
+3. Pick Oracle database. Use the multi-tenant PDB and CDB Architecture to have easy and time-consistent backups yet run them as individual databases
+4. But all my services communicate to the database over REST, Have you considered ORDS ? 
+5. I need a document store, maybe consider SODA
+6. My data is telling me it is a graph, have you thought about Oracle Spatial and Graph ?
