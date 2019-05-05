@@ -29,8 +29,19 @@ color: "#C43A3A"
   > When one backs up data from multiple disparate databases in a microservices architecture it is impossible to have both consistency and availability
 * Even when I do _compromise availability for maintaining consistency_, for eventually consistent systems, it is important to measure _time to consistency_ and understand that I would have to _loose data or make the system unavailable_ for that time.
 * Need to understand how checkpoints work in each of these database technologies and work with them and would have to build DIY code to make this happen.
-* Oracle's Multi Tenant Architecture with Container Database design allows developers to isolate databases and operate pluggable databases as individual databases with independent schemas, tablespaces, users while executing coordinated backups without compromising transactional integrity
-* For Linear Horizontal Scalability and fault tolerance with ACID Compliance one may deploy Oracle Sharding.
+* **Oracle's Multi Tenant Architecture with Container Database design** allows developers to isolate databases and operate pluggable databases as individual databases with independent schemas, tablespaces, users while executing coordinated backups without compromising transactional integrity
+* For Linear Horizontal Scalability and fault tolerance with ACID Compliance one may deploy **Oracle Sharding.**
+
+  ### Keep Calm
+  * Use a wide variety of ORMs for Oracle
+  * ORDS for async communication with Oracle DB
+  * Backup and restore with RMAN
+  * DR with ADG/ODG 
+  * Realtime CDC with GG
+  * Scale with RAC 
+  * Scale it insanely with Exa
+
+> If you are from Google, Netflix, Amazon and only want to build a planet scale application that is not a requirement for 99% of the enterprises , please don't read on. 
 
 ### TL;DR
 
@@ -136,10 +147,11 @@ Assuming that I have figured that I need to write a piece of code/ module that c
 
 1. When you run through your first iteration of your application, use a shared database design pattern.
 2. Agile IT plumbing does not mean agile business. Microservices can be done right if domain-driven design is given a close look.
-3. Pick Oracle database. Use the multi-tenant PDB and CDB Architecture to have easy and time-consistent backups yet run them as individual databases
-4. But all my services communicate to the database over REST, Have you considered ORDS ?
-5. I need a document store, maybe consider SODA
-6. My data is telling me it is a graph, have you thought about Oracle Spatial and Graph ?
+3. Pick Oracle database. 
+   1. Use the multi-tenant PDB and CDB Architecture to have easy and time-consistent backups yet run them as individual databases
+   2. But all my services communicate to the database over REST and asynchronously, Have you considered ORDS ?
+   3. I need a document store, maybe consider SODA
+   4. My data is telling me it is a graph, have you thought about Oracle Spatial and Graph ?
 
 ### Suggested Reading/ References
 
