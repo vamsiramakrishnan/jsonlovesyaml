@@ -13,7 +13,23 @@ image: ''
 color: "#C43A3A"
 
 ---
-Designing Microservices properly can be hard . Solving how you would wish to store and organize data in this decomposed system is the toughest problem to solve.  When the application is broken down into smaller services without mimicking the actual business problem, cracks begin to appear and one ends up doing plumbing with the agile/ devops/ gitops/ noOps or whatever fad methodology it is for the rest of it's life. 
+### For the impatient
+
+* Backups from eventually consistent systems are permanently inconsistent and obsolete
+* Co-ordinating Backups from distributed systems make it even worse
+* The worst is when these backups have to be co-ordinated between disparate databases. 
+* Sharing the database between microservices is an anti-pattern but co-ordinating how would one co-ordinate backups across databases 
+* Use domain driven design to sensibly isolate and decouple components of business logic that is  mutually exclusive 
+* Loosely coupling tightly coupled business entities for the sake of ease of development will make life harder as issues of establishing transactional boundaries and integrity come into play
+* BAC Theorem
+
+  > When one backs up data from multiple disparate databases in a microservices architecture it is impossible to have both consistency and availability
+* Oracle's Multi Tenant Architecture with Container Database design allows developers to isolate databases and operate pluggable databases as individual databases with independent schemas, tablespaces, users while executing coordinated backups without compromising transactional integrity
+* For Linear Horizontal Scalability and fault tolerance with ACID Compliance one may deploy oracle sharding. 
+
+### TL;DR
+
+Designing Microservices the right way can be hard. Defining how one would wish to store and organize data in this decomposed system is the toughest problem to solve.  When the application is broken down into smaller services without mimicking the actual business problem, cracks begin to appear and one ends up doing plumbing with the agile/ devops/ gitops/ noOps or whatever fad methodology it is for the rest of it's life. 
 
 > Bad design is everywhere but with microservices you won't even know what hit you
 
@@ -29,7 +45,19 @@ When this is done right, one can say
 
 However this in itself is a topic for a post in itself. 
 
-In this post I would like to touch upon the complexities a CIO would inherit; in a system that is hastily broken up into microservices and use one database per service to counter the philosophy that a
+In this post I would like to touch upon the complexities a CIO would inherit; in a system that is hastily broken up into microservices and use one database per service a.k.a polyglot persistence 
+
+#### What is polyglot persistence
+
+![](https://i1.wp.com/www.jamesserra.com/wp-content/uploads/2015/04/pp2.png?ssl=1)
+
+The constant argument that we see from developers as the benefit of this architecture
+
+* The failure of one database does not bring app's my availability down. 
+
+Some transactions and businesses have the capacity to be modeled this way but some aren't.  For those applications where consistency is key 
+
+> ##### The failure of One database, will force me to push all other databases back in time in order to recover to a consistent state. If I have managed to take a time-coordinated and consistent backup. 
 
 This is a futuristic microservices application that
 
@@ -48,7 +76,7 @@ Within its own bounded context ( If it exists ) the database may provide provide
 
 How would one back this system up that runs multiple databases from multiple vendors and the onus of co-ordination lies with the application tier. 
 
-BAC Theorem
+### BAC Theorem 
 
 There are two paths that a business can take
 
@@ -84,3 +112,5 @@ Technically we call these
   2. The orders database gets backed up before it can register
 
 This may be agreeable to some use cases in some businesses, so what if i lost a couple comments and a couple posts in Facebook after recovery ? So what if I did not re-populate my video recommendations completely on Netflix after recovery
+
+### Consistent Business Backups, Limited Availability
