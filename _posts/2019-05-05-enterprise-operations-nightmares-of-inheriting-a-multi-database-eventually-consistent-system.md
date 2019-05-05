@@ -77,7 +77,7 @@ This is a futuristic microservices application that
 
 In short it is a lazy developer's dream come true and a nightmare for the team that inherits it for operations and maintenance.
 
-![](./assets/images/sampleApplication.png)
+![](../assets/images/sampleApplication.png)
 
 Within its own bounded context ( If it exists ) the database may provide provide strong consistency but when you look at it as an overarching system you would see that there are some obvious problems
 
