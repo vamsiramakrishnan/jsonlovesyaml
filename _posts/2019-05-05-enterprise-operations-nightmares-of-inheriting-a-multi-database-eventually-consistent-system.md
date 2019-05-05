@@ -142,3 +142,8 @@ Assuming that I have figured that I need to write a piece of code/ module that c
 6. My data is telling me it is a graph, have you thought about Oracle Spatial and Graph ?
 
 ### Suggested Reading/ References
+
+* [https://blog.christianposta.com/microservices/the-hardest-part-about-microservices-data/](https://blog.christianposta.com/microservices/the-hardest-part-about-microservices-data/ "https://blog.christianposta.com/microservices/the-hardest-part-about-microservices-data/")
+* [http://design.inf.usi.ch/sites/default/files/biblio/bac-theorem.pdf](http://design.inf.usi.ch/sites/default/files/biblio/bac-theorem.pdf "http://design.inf.usi.ch/sites/default/files/biblio/bac-theorem.pdf")
+* [https://www.slideshare.net/cesare.pautasso/disaster-recovery-and-microservices-the-bac-theorem](https://www.slideshare.net/cesare.pautasso/disaster-recovery-and-microservices-the-bac-theorem "https://www.slideshare.net/cesare.pautasso/disaster-recovery-and-microservices-the-bac-theorem")
+* [https://www.thoughtworks.com/insights/blog/domain-driven-design-services-architecture](https://www.thoughtworks.com/insights/blog/domain-driven-design-services-architecture "https://www.thoughtworks.com/insights/blog/domain-driven-design-services-architecture")
