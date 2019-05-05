@@ -32,7 +32,8 @@ color: "#C43A3A"
 * **Oracle's Multi Tenant Architecture with Container Database design** allows developers to isolate databases and operate pluggable databases as individual databases with independent schemas, tablespaces, users while executing coordinated backups without compromising transactional integrity
 * For Linear Horizontal Scalability and fault tolerance with ACID Compliance one may deploy **Oracle Sharding.**
 
-  ### Keep Calm
+  ### Keep Calm and build enterprise applications
+  * Shard and run databases as containers
   * Use a wide variety of ORMs for Oracle
   * ORDS for async communication with Oracle DB
   * Backup and restore with RMAN
