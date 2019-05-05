@@ -54,6 +54,8 @@ In this post I would like to touch upon the complexities a CIO would inherit; in
 
 #### What is polyglot persistence
 
+![Image result for How to deal with BAC Theorem in Microservices](https://image.slidesharecdn.com/key-index-180410092523/95/disaster-recovery-and-microservices-the-bac-theorem-27-638.jpg?cb=1523352426)
+
 ![](https://i1.wp.com/www.jamesserra.com/wp-content/uploads/2015/04/pp2.png?ssl=1)
 
 The constant argument that we see from developers as the benefit of this architecture
