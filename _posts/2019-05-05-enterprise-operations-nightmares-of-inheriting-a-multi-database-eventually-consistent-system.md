@@ -7,7 +7,8 @@ tags:
 - sticky
 - featured
 layout: post
-title: Eventually consistent backups mean permanently inconsistent business
+title: Backups from eventually consistent systems could make your business perpetually
+  inconsistent
 author: vamsi
 image: "/assets/images/BackupEventuallyConsistentSystem.png"
 color: "#C43A3A"
