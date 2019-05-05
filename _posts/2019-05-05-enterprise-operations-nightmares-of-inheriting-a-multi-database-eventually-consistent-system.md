@@ -9,7 +9,7 @@ tags:
 layout: post
 title: Eventually consistent backups mean permanently inconsistent business
 author: vamsi
-image: ''
+image: "/assets/images/BackupEventuallyConsistentSystem.png"
 color: "#C43A3A"
 
 ---
@@ -17,40 +17,40 @@ color: "#C43A3A"
 
 * Backups from eventually consistent systems are **_permanently inconsistent and obsolete or have risk of data loss_**
 * Co-ordinating Backups from distributed and eventually consistent systems make it even worse
-* The worst is when these backups have to be co-ordinated between disparate databases where data is split and stored. 
+* The worst is when these backups have to be co-ordinated between disparate databases where data is split and stored.
 
-  > Sharing the database between microservices is an anti-pattern 
+  > Sharing the database between microservices is an anti-pattern
 
-  But the ability to co-ordinate consistent backups between multiple independent databases is life-saving in a microservices architecture.  
-* Use domain driven design to sensibly isolate and decouple components of business logic that are mutually exclusive 
+  But the ability to co-ordinate consistent backups between multiple independent databases is life-saving in a microservices architecture.
+* Use domain driven design to sensibly isolate and decouple components of business logic that are mutually exclusive
 * Loosely coupling/ decomoposing tightly coupled parts of a business transaction for the sake of ease of development will make life harder as issues of establishing transactional boundaries and integrity come into play
 * BAC Theorem
 
   > When one backs up data from multiple disparate databases in a microservices architecture it is impossible to have both consistency and availability
-* Even when I do _compromise availability for maintaining consistency_, for eventually consistent systems, it is important to measure _time to consistency_ and understand that I would have to _loose data or make the system unavailable_ for that time. 
-* Need to understand how checkpoints work in each of these database technologies and work with them and would have to build DIY code to make this happen. 
-* Oracle's Multi Tenant Architecture with Container Database design allows developers to isolate databases and operate pluggable databases as individual databases with independent schemas, tablespaces, users while executing coordinated backups without compromising transactional integrity 
-* For Linear Horizontal Scalability and fault tolerance with ACID Compliance one may deploy Oracle Sharding. 
+* Even when I do _compromise availability for maintaining consistency_, for eventually consistent systems, it is important to measure _time to consistency_ and understand that I would have to _loose data or make the system unavailable_ for that time.
+* Need to understand how checkpoints work in each of these database technologies and work with them and would have to build DIY code to make this happen.
+* Oracle's Multi Tenant Architecture with Container Database design allows developers to isolate databases and operate pluggable databases as individual databases with independent schemas, tablespaces, users while executing coordinated backups without compromising transactional integrity
+* For Linear Horizontal Scalability and fault tolerance with ACID Compliance one may deploy Oracle Sharding.
 
 ### TL;DR
 
-Designing Microservices the right way can be hard. Defining how one would wish to store and organize data in this decomposed system is the toughest problem to solve.  When the application is broken down into smaller services without mimicking the actual business problem, cracks begin to appear and one ends up doing plumbing with the agile/ devops/ gitops/ noOps or whatever fad methodology it is for the rest of it's life. 
+Designing Microservices the right way can be hard. Defining how one would wish to store and organize data in this decomposed system is the toughest problem to solve.  When the application is broken down into smaller services without mimicking the actual business problem, cracks begin to appear and one ends up doing plumbing with the agile/ devops/ gitops/ noOps or whatever fad methodology it is for the rest of it's life.
 
 > Bad design is everywhere but with microservices you won't even know what hit you
 
 ![](/assets/images/AllureMicroservices.png)
 
-Domain driven design is one of the principles used to define context and boundaries of the application while keeping the overall business transaction in mind.  
+Domain driven design is one of the principles used to define context and boundaries of the application while keeping the overall business transaction in mind.
 
 ![](/assets/images/TransactionalBoundaries.png)
 
 When this is done right, one can say
 
->  We finally got the Service Oriented Architecture right through microservices. 
+> We finally got the Service Oriented Architecture right through microservices.
 
-However this in itself is a topic for a post in itself. 
+However this in itself is a topic for a post in itself.
 
-In this post I would like to touch upon the complexities a CIO would inherit; in a system that is hastily broken up into microservices and use one database per service a.k.a polyglot persistence 
+In this post I would like to touch upon the complexities a CIO would inherit; in a system that is hastily broken up into microservices and use one database per service a.k.a polyglot persistence
 
 #### What is polyglot persistence
 
@@ -60,11 +60,11 @@ In this post I would like to touch upon the complexities a CIO would inherit; in
 
 The constant argument that we see from developers as the benefit of this architecture
 
-* The failure of one database does not bring app's availability down. 
+* The failure of one database does not bring app's availability down.
 
-Some transactions and businesses have the capacity to be modeled this way but some aren't.  For those applications where **_consistency is key_** 
+Some transactions and businesses have the capacity to be modeled this way but some aren't.  For those applications where **_consistency is key_**
 
-> ##### The failure of One database, will push all other databases back in time in order to recover to a consistent state. If I have managed to take a time-coordinated and consistent backup. 
+> ##### The failure of One database, will push all other databases back in time in order to recover to a consistent state. If I have managed to take a time-coordinated and consistent backup.
 
 This is a futuristic microservices application that
 
@@ -81,14 +81,16 @@ In short it is a lazy developer's dream come true and a nightmare for the team t
 
 Within its own bounded context ( If it exists ) the database may provide provide strong consistency but when you look at it as an overarching system you would see that there are some obvious problems
 
-How would one back this system up that runs multiple databases from multiple vendors and the onus of co-ordination lies with the application tier. 
+How would one back this system up that runs multiple databases from multiple vendors and the onus of co-ordination lies with the application tier.
 
-### BAC Theorem 
+### BAC Theorem
 
 There are two paths that a business can take
 
 * Inconsistent business backups with maximum availability
 * Consistent backups but with limited availability
+
+![](https://image.slidesharecdn.com/key-index-180410092523/95/disaster-recovery-and-microservices-the-bac-theorem-46-638.jpg?cb=1523352426)
 
 ### Inconsistent Business Backups, Maximum Availability
 
@@ -122,19 +124,21 @@ This may be agreeable to some use cases in some businesses, so what if i lost a 
 
 ### Consistent Business Backups, Limited Availability
 
-Assuming that I have figured that I need to write a piece of code/ module that can co-ordinate with all databases, here are a bunch of challenges I would face with doing that 
+Assuming that I have figured that I need to write a piece of code/ module that can co-ordinate with all databases, here are a bunch of challenges I would face with doing that
 
-1. To be able to achieve a consistent time-coordinated backup, I should first be able to tell all the services that write/read data from databases to not do so until I create a Checkpoint, this only makes my backup time-coordinated. 
-2. A Checkpoint needs to be created when all the database systems have reached consistency 
+1. To be able to achieve a consistent time-coordinated backup, I should first be able to tell all the services that write/read data from databases to not do so until I create a Checkpoint, this only makes my backup time-coordinated.
+2. A Checkpoint needs to be created when all the database systems have reached consistency
 3. Depending on whether I am performing a full or incremental backup, all the systems will remain unavailable for which I am taking co-ordinated backups
 
-   > All this DIY Magic to make all of them unavailable for until the slowest database finishes backing up 
+   > All this DIY Magic to make all of them unavailable for until the slowest database finishes backing up
 
-### Do yourself a favor 
+### Do yourself a favor
 
-1. When you run through your first iteration of your application, use a shared database design pattern. 
-2. Agile IT plumbing does not mean agile business. Microservices can be done right if domain-driven design is given a close look. 
+1. When you run through your first iteration of your application, use a shared database design pattern.
+2. Agile IT plumbing does not mean agile business. Microservices can be done right if domain-driven design is given a close look.
 3. Pick Oracle database. Use the multi-tenant PDB and CDB Architecture to have easy and time-consistent backups yet run them as individual databases
-4. But all my services communicate to the database over REST, Have you considered ORDS ? 
+4. But all my services communicate to the database over REST, Have you considered ORDS ?
 5. I need a document store, maybe consider SODA
 6. My data is telling me it is a graph, have you thought about Oracle Spatial and Graph ?
+
+### Suggested Reading/ References
