@@ -17,11 +17,17 @@ Designing Microservices properly can be hard . Solving how you would wish to sto
 
 > Bad design is everywhere but with microservices you won't even know what hit you
 
-![](https://cdn-images-1.medium.com/max/1600/1*L7KkunNI2IfbxuHITYPEzQ.jpeg)
-
 ![](/assets/images/AllureMicroservices.png)
 
-Domain driven design and defining context and domain in an application needs close collaboration between Business Expertise and Development and is a complex task. When this is done right, one can say we finally got SOA right through microservices.
+Domain driven design is one of the principles used to define context and boundaries of the application while keeping the overall business transaction in mind.  
+
+![](/assets/images/TransactionalBoundaries.png)
+
+When this is done right, one can say
+
+>  We finally got the Service Oriented Architecture right through microservices. 
+
+However this in itself is a topic for a post in itself. 
 
 In this post I would like to touch upon the complexities a CIO would inherit; in a system that is hastily broken up into microservices and use one database per service to counter the philosophy that a
 
@@ -40,7 +46,11 @@ In short it is a lazy developer's dream come true and a nightmare for the team t
 
 Within its own bounded context ( If it exists ) the database may provide provide strong consistency but when you look at it as an overarching system you would see that there are some obvious problems
 
-How would one back this system up that runs multiple databases from multiple vendors and the onus of co-ordination lies with the application tier. There are two paths that a business can take
+How would one back this system up that runs multiple databases from multiple vendors and the onus of co-ordination lies with the application tier. 
+
+BAC Theorem
+
+There are two paths that a business can take
 
 * Inconsistent business backups with maximum availability
 * Consistent backups but with limited availability
@@ -63,7 +73,7 @@ Technically we call these
   Broken links are why we sometimes get an apology email from an e-commerce vendor that they would give us store credits because they went out of stock even after we received an order number and confirmation ( Simplified for understanding )
   1. The order database got updated
   2. The inventory database is just about to get updated
-  3. My backup happened before the inventory database got updated
+  3. The backup happened before the inventory database got updated
   4. The inventory database gets updated but my backup does not have this information
   5. The system crashed and I restored it
   6. The state of the system is such that my orders database has this information but my inventory database does not.
