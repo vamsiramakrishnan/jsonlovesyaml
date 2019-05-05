@@ -62,7 +62,7 @@ When this is done right, one can say
 
 However this in itself is a topic for a post.
 
-In this post I would like to touch upon the complexities a CIO would inherit; in a system that is hastily broken up into microservices and use one database per service a.k.a polyglot persistence
+In this post I would like to touch upon the complexities an enterprise would inherit; in a system that is hastily broken up into microservices and use one database per service **_a.k.a polyglot persistence_**
 
 #### What is polyglot persistence
 
