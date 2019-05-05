@@ -61,8 +61,6 @@ Technically we call these
 * **Broken Links** :
 
   Broken links are why we sometimes get an apology email from an e-commerce vendor that they would give us store credits because they went out of stock even after we received an order number and confirmation ( Simplified for understanding )
-
-  In simple database terminology 
   1. The order database got updated
   2. The inventory database is just about to get updated
   3. My backup happened before the inventory database got updated
