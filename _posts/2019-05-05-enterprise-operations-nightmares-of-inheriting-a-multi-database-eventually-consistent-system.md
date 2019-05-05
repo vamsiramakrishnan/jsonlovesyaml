@@ -37,12 +37,12 @@ color: "#C43A3A"
   * Use a wide variety of ORMs for Oracle
   * ORDS for async communication with Oracle DB
   * Backup and restore with RMAN
-  * DR with ADG/ODG 
+  * DR with ADG/ODG
   * Realtime CDC with GG
-  * Scale with RAC 
+  * Scale with RAC
   * Scale it insanely with Exa
 
-> If you are from Google, Netflix, Amazon and only want to build a planet scale application that is not a requirement for 99% of the enterprises , please don't read on. 
+> If you are from Google, Netflix, Amazon and only want to build a planet scale application that is not a requirement for 99% of the enterprises , please don't read on.
 
 ### TL;DR
 
@@ -60,7 +60,7 @@ When this is done right, one can say
 
 > We finally got the Service Oriented Architecture right through microservices.
 
-However this in itself is a topic for a post in itself.
+However this in itself is a topic for a post.
 
 In this post I would like to touch upon the complexities a CIO would inherit; in a system that is hastily broken up into microservices and use one database per service a.k.a polyglot persistence
 
@@ -148,7 +148,7 @@ Assuming that I have figured that I need to write a piece of code/ module that c
 
 1. When you run through your first iteration of your application, use a shared database design pattern.
 2. Agile IT plumbing does not mean agile business. Microservices can be done right if domain-driven design is given a close look.
-3. Pick Oracle database. 
+3. Pick Oracle database.
    1. Use the multi-tenant PDB and CDB Architecture to have easy and time-consistent backups yet run them as individual databases
    2. But all my services communicate to the database over REST and asynchronously, Have you considered ORDS ?
    3. I need a document store, maybe consider SODA
