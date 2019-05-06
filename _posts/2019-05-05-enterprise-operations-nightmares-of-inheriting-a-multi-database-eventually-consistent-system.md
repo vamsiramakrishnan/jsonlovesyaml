@@ -22,11 +22,15 @@ color: "#C43A3A"
 * Hence backups from eventually consistent systems are **_permanently inconsistent and obsolete or have risk of data loss_**
 * Co-ordinating backups from distributed and eventually consistent systems make it even worse
 
-But most transaction critical databases in my microservices architecture are strong ACID compliant RDBMSes 
+But most transaction critical databases in my microservices architecture are strong ACID compliant RDBMSes
 
-> the concept of transactional boundaries and integrity is very different in a microservice architecture 
+> the concept of transactional boundaries and consistency is very different in a microservice architecture
 
-* The worst of all scenarios is when these backups have to be co-ordinated between disparate databases where data is split and stored.
+* The worst of all scenarios is when these backups have to be co-ordinated between disparate databases where data that is part of one business transaction is split and stored.
+
+> Diversity is not necessarily good here
+
+* 
 
   > Sharing the database between microservices is an anti-pattern
 
@@ -37,14 +41,14 @@ But most transaction critical databases in my microservices architecture are str
 
   > When one backs up data from multiple disparate databases in a microservices architecture it is impossible to have both consistency and availability
 * Even when I do _compromise availability for maintaining consistency_, for eventually consistent systems, it is important to measure _time to consistency_ and understand that I would have to _loose data or make the system unavailable_ for that time.
-* The system will be unavailable until the slowest database finishes backing up. 
+* The system will be unavailable until the slowest database finishes backing up.
 * Need to understand how checkpoints work in each of these database technologies and work with them and would have to build DIY code to make this happen.
 
-There is a way out  
+There is a way out
 
-Isolate data not Operations is the philosophy behind oracle’s Multi tenancy architecture . 
+Isolate data not Operations is the philosophy behind oracle’s Multi tenancy architecture .
 
-* **Oracle's Multi Tenant Architecture with Container Database design** allows developers to isolate databases and operate pluggable databases as individual databases with independent schemas, tablespaces, users all while executing coordinated backups without compromising transactional integrity allowing them to be managed  as a single entity 
+* **Oracle's Multi Tenant Architecture with Container Database design** allows developers to isolate databases and operate pluggable databases as individual databases with independent schemas, tablespaces, users all while executing coordinated backups without compromising transactional integrity allowing them to be managed  as a single entity
 * For Linear Horizontal Scalability and fault tolerance with ACID Compliance one may deploy - truly share nothing architecture such as **Oracle Sharding**
 
   ### Keep Calm and build enterprise applications
