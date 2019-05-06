@@ -38,14 +38,14 @@ color: "#C43A3A"
 
   ### Keep Calm and build enterprise applications
   * Shard databases for a share nothing architecture
-  * Run databases as containers 
+  * Run databases as containers with PDBs and CDBs
   * Use a wide variety of ORMs for Oracle
   * [ORDS](https://blogs.oracle.com/oraclemagazine/automatic-rest "ORDS") for REST based async communication with Oracle DB
   * Backup and restore conveniently with [RMAN](https://en.m.wikipedia.org/wiki/RMAN "RMAN")
   * DR with ADG/ODG
   * Realtime CDC with GG
-  * Scale with RAC
-  * Scale it insanely with Exadata platform 
+  * Scale Horizontally with Real Application Clusters
+  * Scale it insanely with [Exadata](https://www.oracle.com/technetwork/database/exadata/overview/index.html "Exadata")  adata platform 
 
 > If you are from Google, Netflix, Amazon and only want to build a planet scale application that is not a requirement for 99% of the enterprises , please don't read on.
 
