@@ -16,7 +16,10 @@ color: "#C43A3A"
 ---
 ### For the impatient
 
-* Backups from eventually consistent systems are **_permanently inconsistent and obsolete or have risk of data loss_**
+* Backups are always point in time   And so are restorations. 
+* Eventually consistent systems have a time to consistency
+* So if there is a system where transactions occur until infinity , time to consistency gets pushed infinitely until the last transaction completed and system eventually reaches consistency.  
+* Hence backups from eventually consistent systems are **_permanently inconsistent and obsolete or have risk of data loss_** 
 * Co-ordinating Backups from distributed and eventually consistent systems make it even worse
 * The worst is when these backups have to be co-ordinated between disparate databases where data is split and stored.
 
@@ -36,12 +39,12 @@ color: "#C43A3A"
   ### Keep Calm and build enterprise applications
   * Shard and run databases as containers
   * Use a wide variety of ORMs for Oracle
-  * ORDS for async communication with Oracle DB
-  * Backup and restore with RMAN
+  * [ORDS](https://blogs.oracle.com/oraclemagazine/automatic-rest "ORDS") for REST based async communication with Oracle DB
+  * Backup and restore conveniently with [RMAN](https://en.m.wikipedia.org/wiki/RMAN "RMAN")
   * DR with ADG/ODG
   * Realtime CDC with GG
   * Scale with RAC
-  * Scale it insanely with Exa
+  * Scale it insanely with Exadata platform 
 
 > If you are from Google, Netflix, Amazon and only want to build a planet scale application that is not a requirement for 99% of the enterprises , please don't read on.
 
