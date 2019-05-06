@@ -24,15 +24,14 @@ color: "#C43A3A"
 
 But most transaction critical databases in my microservices architecture are strong ACID compliant RDBMSes
 
-> the concept of transactional boundaries and consistency is very different in a microservice architecture
+    THE CONCEPT OF TRANSACTIONAL CONSISTENCY IS DIFFERENT
+    BECAUSE OF THE NUMBER OF ACTORS INVOLVED IN STORING THE COMPONENTS OF THAT TRANSACTION
 
 * The worst of all scenarios is when these backups have to be co-ordinated between disparate databases where data that is part of one business transaction is split and stored.
 
-> Diversity is not necessarily good here
+> Diversity is not necessarily helpful here
 
-* 
-
-  > Sharing the database between microservices is an anti-pattern
+* Sharing the database between microservices is an anti-pattern
 
   But the ability to co-ordinate and extract consistent backups between multiple independent databases is **_life-saving_** in a microservices architecture.
 * Use domain driven design to sensibly isolate and decouple components of business logic that are mutually exclusive
