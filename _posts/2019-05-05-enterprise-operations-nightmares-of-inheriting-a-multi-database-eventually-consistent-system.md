@@ -25,16 +25,22 @@ color: "#C43A3A"
 
   > Sharing the database between microservices is an anti-pattern
 
-  But the ability to co-ordinate and extract consistent backups between multiple independent databases is life-saving in a microservices architecture.
+  But the ability to co-ordinate and extract consistent backups between multiple independent databases is **_life-saving_** in a microservices architecture.
 * Use domain driven design to sensibly isolate and decouple components of business logic that are mutually exclusive
 * Loosely coupling/ decomoposing tightly coupled parts of a business transaction for the sake of ease of development will make life harder as issues of establishing transactional boundaries and integrity come into play
-* BAC Theorem
+* Specifically on the topics of backup , the BAC Theorem
 
   > When one backs up data from multiple disparate databases in a microservices architecture it is impossible to have both consistency and availability
 * Even when I do _compromise availability for maintaining consistency_, for eventually consistent systems, it is important to measure _time to consistency_ and understand that I would have to _loose data or make the system unavailable_ for that time.
+* The system will be unavailable until the slowest database finishes backing up. 
 * Need to understand how checkpoints work in each of these database technologies and work with them and would have to build DIY code to make this happen.
-* **Oracle's Multi Tenant Architecture with Container Database design** allows developers to isolate databases and operate pluggable databases as individual databases with independent schemas, tablespaces, users while executing coordinated backups without compromising transactional integrity
-* For Linear Horizontal Scalability and fault tolerance with ACID Compliance one may deploy **Oracle Sharding.**
+
+There is a way out  
+
+Isolate data not Operations is the philosophy behind oracle’s Multi tenancy architecture . 
+
+* **Oracle's Multi Tenant Architecture with Container Database design** allows developers to isolate databases and operate pluggable databases as individual databases with independent schemas, tablespaces, users all while executing coordinated backups without compromising transactional integrity allowing them to be managed  as a single entity 
+* For Linear Horizontal Scalability and fault tolerance with ACID Compliance one may deploy - truly share nothing architecture such as **Oracle Sharding**
 
   ### Keep Calm and build enterprise applications
   * Shard databases for a share nothing architecture
