@@ -25,7 +25,7 @@ color: "#C43A3A"
 
   > Sharing the database between microservices is an anti-pattern
 
-  But the ability to co-ordinate consistent backups between multiple independent databases is life-saving in a microservices architecture.
+  But the ability to co-ordinate and extract consistent backups between multiple independent databases is life-saving in a microservices architecture.
 * Use domain driven design to sensibly isolate and decouple components of business logic that are mutually exclusive
 * Loosely coupling/ decomoposing tightly coupled parts of a business transaction for the sake of ease of development will make life harder as issues of establishing transactional boundaries and integrity come into play
 * BAC Theorem
