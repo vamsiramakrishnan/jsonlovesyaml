@@ -37,7 +37,8 @@ color: "#C43A3A"
 * For Linear Horizontal Scalability and fault tolerance with ACID Compliance one may deploy **Oracle Sharding.**
 
   ### Keep Calm and build enterprise applications
-  * Shard and run databases as containers
+  * Shard databases for a share nothing architecture
+  * Run databases as containers 
   * Use a wide variety of ORMs for Oracle
   * [ORDS](https://blogs.oracle.com/oraclemagazine/automatic-rest "ORDS") for REST based async communication with Oracle DB
   * Backup and restore conveniently with [RMAN](https://en.m.wikipedia.org/wiki/RMAN "RMAN")
