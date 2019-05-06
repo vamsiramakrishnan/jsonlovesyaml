@@ -81,7 +81,7 @@ The constant argument that we see from developers as the benefit of this archite
 
 Some transactions and businesses have the capacity to be modeled this way but some aren't.  For those applications where **_consistency is key_**
 
-> ##### The failure of One database, will push all other databases back in time in order to recover to a consistent state. If I have managed to take a time-coordinated and consistent backup.
+> ##### The failure of One database, will push all other databases back in time in order to recover to a consistent state. 
 
 This is a futuristic microservices application that
 
