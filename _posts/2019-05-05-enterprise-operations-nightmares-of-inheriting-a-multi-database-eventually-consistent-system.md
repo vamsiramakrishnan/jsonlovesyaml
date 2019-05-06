@@ -20,7 +20,12 @@ color: "#C43A3A"
 * Eventually consistent systems have a time to consistency
 * So if there is a system where transactions occur until infinity , time to consistency gets pushed infinitely until the last transaction completed and system eventually reaches consistency.
 * Hence backups from eventually consistent systems are **_permanently inconsistent and obsolete or have risk of data loss_**
-* Co-ordinating Backups from distributed and eventually consistent systems make it even worse
+* Co-ordinating backups from distributed and eventually consistent systems make it even worse
+
+But most transaction critical databases in my microservices architecture are strong ACID compliant RDBMSes 
+
+> the concept of transactional boundaries and integrity is very different in a microservice architecture 
+
 * The worst of all scenarios is when these backups have to be co-ordinated between disparate databases where data is split and stored.
 
   > Sharing the database between microservices is an anti-pattern
@@ -28,7 +33,7 @@ color: "#C43A3A"
   But the ability to co-ordinate and extract consistent backups between multiple independent databases is **_life-saving_** in a microservices architecture.
 * Use domain driven design to sensibly isolate and decouple components of business logic that are mutually exclusive
 * Loosely coupling/ decomoposing tightly coupled parts of a business transaction for the sake of ease of development will make life harder as issues of establishing transactional boundaries and integrity come into play
-* Specifically on the topics of backup , the BAC Theorem
+* Specifically on the topic of backup, the **BAC Theorem**
 
   > When one backs up data from multiple disparate databases in a microservices architecture it is impossible to have both consistency and availability
 * Even when I do _compromise availability for maintaining consistency_, for eventually consistent systems, it is important to measure _time to consistency_ and understand that I would have to _loose data or make the system unavailable_ for that time.
