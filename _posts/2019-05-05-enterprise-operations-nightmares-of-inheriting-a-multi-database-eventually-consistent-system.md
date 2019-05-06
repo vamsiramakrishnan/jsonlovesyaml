@@ -16,12 +16,12 @@ color: "#C43A3A"
 ---
 ### For the impatient
 
-* Backups are always point in time   And so are restorations. 
+* Backups are always point in time   And so are restorations.
 * Eventually consistent systems have a time to consistency
-* So if there is a system where transactions occur until infinity , time to consistency gets pushed infinitely until the last transaction completed and system eventually reaches consistency.  
-* Hence backups from eventually consistent systems are **_permanently inconsistent and obsolete or have risk of data loss_** 
+* So if there is a system where transactions occur until infinity , time to consistency gets pushed infinitely until the last transaction completed and system eventually reaches consistency.
+* Hence backups from eventually consistent systems are **_permanently inconsistent and obsolete or have risk of data loss_**
 * Co-ordinating Backups from distributed and eventually consistent systems make it even worse
-* The worst is when these backups have to be co-ordinated between disparate databases where data is split and stored.
+* The worst of all scenarios is when these backups have to be co-ordinated between disparate databases where data is split and stored.
 
   > Sharing the database between microservices is an anti-pattern
 
@@ -45,7 +45,7 @@ color: "#C43A3A"
   * DR with ADG/ODG
   * Realtime CDC with GG
   * Scale Horizontally with Real Application Clusters
-  * Scale it insanely with [Exadata](https://www.oracle.com/technetwork/database/exadata/overview/index.html "Exadata")  adata platform 
+  * Scale it insanely with [Exadata](https://www.oracle.com/technetwork/database/exadata/overview/index.html "Exadata")  adata platform
 
 > If you are from Google, Netflix, Amazon and only want to build a planet scale application that is not a requirement for 99% of the enterprises , please don't read on.
 
@@ -81,7 +81,7 @@ The constant argument that we see from developers as the benefit of this archite
 
 Some transactions and businesses have the capacity to be modeled this way but some aren't.  For those applications where **_consistency is key_**
 
-> ##### The failure of One database, will push all other databases back in time in order to recover to a consistent state. 
+> ##### The failure of One database, will push all other databases back in time in order to recover to a consistent state.
 
 This is a futuristic microservices application that
 
