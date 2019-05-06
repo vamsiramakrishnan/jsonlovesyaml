@@ -24,8 +24,12 @@ color: "#C43A3A"
 
 But most transaction critical databases in my microservices architecture are strong ACID compliant RDBMSes
 
-    THE CONCEPT OF TRANSACTIONAL CONSISTENCY IS DIFFERENT
-    BECAUSE OF THE NUMBER OF ACTORS INVOLVED IN STORING THE COMPONENTS OF THAT TRANSACTION
+    CONCEPTS OF TRANSACTIONAL CONSISTENCY
+    ARE DIFFERENT BECAUSE OF 
+    THE NUMBER OF ACTORS
+    INVOLVED IN STORING
+    THE COMPONENTS OF 
+    THE TRANSACTION
 
 * The worst of all scenarios is when these backups have to be co-ordinated between disparate databases where data that is part of one business transaction is split and stored.
 
@@ -45,7 +49,7 @@ But most transaction critical databases in my microservices architecture are str
 
 There is a way out
 
-Isolate data and databases but consolidate operations is the philosophy behind Oracle’s Multi tenant architecture. 
+Isolate data and databases but consolidate operations is the philosophy behind Oracle’s Multi tenant architecture.
 
 * **Oracle's Multi Tenant Architecture with Container Database design** allows developers to isolate databases and operate pluggable databases as individual databases with independent schemas, tablespaces, users all while executing coordinated backups without compromising transactional integrity allowing them to be managed  as a single entity
 * For Linear Horizontal Scalability and fault tolerance with ACID Compliance one may deploy - truly share nothing architecture such as **Oracle Sharding**
