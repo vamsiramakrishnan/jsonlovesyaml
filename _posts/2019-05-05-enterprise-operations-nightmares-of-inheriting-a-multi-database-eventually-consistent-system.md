@@ -16,26 +16,29 @@ color: "#C43A3A"
 ---
 ### For the impatient
 
-* Backups are always point in time   And so are restorations.
-* Eventually consistent systems have a time to consistency
-* So if there is a system where transactions occur until infinity , time to consistency gets pushed infinitely until the last transaction completed and system eventually reaches consistency.
+* Backups are always point in time   , so are restorations.
+* All eventually consistent systems have a “time to consistency”
+* So, if there is a system where transactions occur until infinity , time to consistency gets pushed infinitely too, until the last transaction gets completed and the system eventually reaches consistency.
 * Hence backups from eventually consistent systems are **_permanently inconsistent and obsolete or have risk of data loss_**
-* Co-ordinating backups from distributed and eventually consistent systems make it even worse
+* Co-ordinating backups from distributed and eventually consistent systems may exacerbate this risk. 
 
-But most transaction critical databases in my microservices architecture are strong ACID compliant RDBMSes
+But most transaction critical databases in my microservices based architecture are strong ACID compliant RDBMSes
 
-    CONCEPTS OF TRANSACTIONAL CONSISTENCY
-    ARE DIFFERENT BECAUSE OF 
+but that doesn’t guarantee anything   Because 
+
+    THE CONCEPT OF TRANSACTIONAL
+    CONSISTENCY IS RADICALLY 
+    DIFFERENT BECAUSE OF 
     THE NUMBER OF ACTORS
     INVOLVED IN STORING
     THE COMPONENTS OF 
-    THE TRANSACTION
+    A SINGLE TRANSACTION
 
 * The worst of all scenarios is when these backups have to be co-ordinated between disparate databases where data that is part of one business transaction is split and stored.
 
 > Diversity is not necessarily helpful here
 
-* Sharing the database between microservices is an anti-pattern
+* Sharing the database between microservices is an anti-pattern. 
 
   But the ability to co-ordinate and extract consistent backups between multiple independent databases is **_life-saving_** in a microservices architecture.
 * Use domain driven design to sensibly isolate and decouple components of business logic that are mutually exclusive
@@ -43,9 +46,10 @@ But most transaction critical databases in my microservices architecture are str
 * Specifically on the topic of backup, the **BAC Theorem**
 
   > When one backs up data from multiple disparate databases in a microservices architecture it is impossible to have both consistency and availability
-* Even when I do _compromise availability for maintaining consistency_, for eventually consistent systems, it is important to measure _time to consistency_ and understand that I would have to _loose data or make the system unavailable_ for that time.
-* The system will be unavailable until the slowest database finishes backing up.
-* Need to understand how checkpoints work in each of these database technologies and work with them and would have to build DIY code to make this happen.
+* Even when I do _compromise availability for maintaining consistency_, for eventually consistent systems, it is important to measure _time to consistency_ and understand that I am prone to _data loss or make the system unavailable_ for further transactions until my last transaction reaches consistency.
+* The system will be unavailable until the slowest database finishes backing up or restoring. 
+* Need to understand how checkpoints and transaction logs or backup principles work in each of these database technologies and work with them
+*  Would have to build DIY code to make this happen.
 
 There is a way out
 
