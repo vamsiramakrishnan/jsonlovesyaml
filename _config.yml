@@ -47,13 +47,6 @@ authors:
       Cloud.
     email: vamsi.ramakrishnan@oracle.com
     twitter: https://twitter.com/mrvemzi
-  sanjeev:
-    name: Sanjeev
-    site: https://in.linkedin.com/in/sanjeev-gopinath-28595b21
-    bio: IaaS & PaaS Pre-Sales at Oracle, Debug Ninja, Ex-MSFT
-    avatar: "/assets/images/avatar2.jpg"
-    email: sanjeev.gopinath@oracle.com
-    twitter: https://twitter.com/sanjeevgopinath
 markdown: kramdown
 highlighter: rouge
 paginate: 10
