@@ -22,10 +22,3 @@ fields:
   name: tags
   label: tags
   default: []
-- type: color
-  config:
-    color_format: Hex
-    required: true
-  label: color
-  name: color
-  description: Color of Text
